@@ -4,7 +4,7 @@
     "type": "voc",
     "eap": "OSLO-Schuldbeheer.eap",
     "diagram": "OSLO-Schuldbeheer-master",
-    "template": "omgevingsvergunning-voc.j2",
+    "template": "schuldbeheer-voc.j2",
     "title": "OSLO Schuldbeheer",
     "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "publication-date": "2024-04-25",
