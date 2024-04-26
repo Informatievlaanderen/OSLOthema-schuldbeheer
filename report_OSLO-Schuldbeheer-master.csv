@@ -1,0 +1,123 @@
+    Nr;ElementName;ElementType;ValidationClass;TestId;TestName;Level;Issue
+    1;Schuldvordering;Element;EaElementHasDefinitionTag;05; GeenOntbrekendeElementenInOverzicht.;warning;No valid definitiontags found for Schuldvordering
+    2;Schuldenaar;Element;EaElementHasDefinitionTag;05; GeenOntbrekendeElementenInOverzicht.;warning;No valid definitiontags found for Schuldenaar
+    3;Schuldeiser;Element;EaElementHasDefinitionTag;05; GeenOntbrekendeElementenInOverzicht.;warning;No valid definitiontags found for Schuldeiser
+    4;Rechtspositie;Element;EaElementHasDefinitionTag;05; GeenOntbrekendeElementenInOverzicht.;warning;No valid definitiontags found for Rechtspositie
+    5;JuridischWerk;Element;EaElementHasDefinitionTag;05; GeenOntbrekendeElementenInOverzicht.;warning;No valid definitiontags found for JuridischWerk
+    6;Geldbedrag;Element;EaElementHasDefinitionTag;05; GeenOntbrekendeElementenInOverzicht.;warning;No valid definitiontags found for Geldbedrag
+    7;FinancieleToestand;Element;EaElementHasDefinitionTag;05; GeenOntbrekendeElementenInOverzicht.;warning;No valid definitiontags found for FinancieleToestand
+    8;Document;Element;EaElementHasDefinitionTag;05; GeenOntbrekendeElementenInOverzicht.;warning;No valid definitiontags found for Document
+    9;Tijdspanne;Element;EaElementHasDefinitionTag;05; GeenOntbrekendeElementenInOverzicht.;warning;No valid definitiontags found for Tijdspanne
+    10;Rechtspositie;Element;EaElementHasLabelTag;02; GeenOntbrekendeElementenInOverzicht.;warning;No valid labeltags found for element Rechtspositie
+    11;Schuldvordering->Betwisting (A);Connector;EaConnectorHasCardinality;10; Attribuut:KardinaliteitAanwezig.;warning;No valid source cardinality defined for connector schuldvordering (Schuldvordering->Betwisting (A)): null.
+    12;schuldenaar;Connector;EaConnectorRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of role schuldenaar of connector Schuldvordering->Schuldenaar (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    13;schuldeiser;Connector;EaConnectorRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of role schuldeiser of connector Schuldvordering->Schuldeiser (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    14;Betaling->Schuldvordering (A);Connector;EaConnectorRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of role betaling of connector Betaling->Schuldvordering (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    15;Betaling->Schuldvordering (A);Connector;EaConnectorRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of role schuldvordering of connector Betaling->Schuldvordering (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    16;Afbetalingsplan->Schuldvordering (A);Connector;EaConnectorRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of role afbetalingsplan of connector Afbetalingsplan->Schuldvordering (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    17;Afbetalingsplan->Schuldvordering (A);Connector;EaConnectorRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of role schuldvordering of connector Afbetalingsplan->Schuldvordering (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    18;Schuldvordering->Betwisting (A);Connector;EaConnectorRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of role schuldvordering of connector Schuldvordering->Betwisting (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    19;Schuldvordering->Betwisting (A);Connector;EaConnectorRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of role betwisting of connector Schuldvordering->Betwisting (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    20;zaak;Connector;EaConnectorRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of role zaak of connector Zaak->Zaakhandeling (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    21;zaakhandeling;Connector;EaConnectorRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of role zaakhandeling of connector Zaakhandeling->Zaakhandeling (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    22;afbetalingsplan;Connector;EaConnectorRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of role afbetalingsplan of connector VoorstelGlobaalAfbetalingsplan->Afbetalingsplan (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    23;aanvaarding;Connector;EaConnectorRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of role aanvaarding of connector AanvaardingGlobaalAfbetalingsplan->Afbetalingsplan (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    24;afbetalingsplan;Connector;EaConnectorRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of role afbetalingsplan of connector Afbetalingsplan->Afbetalingsplan (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    25;afbetalingsplan;Connector;EaConnectorRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of role afbetalingsplan of connector Betaling->Afbetalingsplan (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    26;stuk;Connector;EaConnectorRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of role stuk of connector Zaakhandeling->Document (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    27;voorstel;Connector;EaConnectorRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of role voorstel of connector AanvaardingGlobaalAfbetalingsplan->VoorstelGlobaalAfbetalingsplan (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    28;wanbetalingsregeling;Connector;EaConnectorRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of role wanbetalingsregeling of connector Schuldvordering->Wanbetalingsregeling (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    29;zaak;Connector;EaConnectorHasLabelTag;08; Attribuut:AttribuutNaamAanwezig.;warning;No valid labeltags found for connector role zaak of connector Zaak->Zaakhandeling (A)
+    30;zaakhandeling;Connector;EaConnectorHasLabelTag;08; Attribuut:AttribuutNaamAanwezig.;warning;No valid labeltags found for connector role zaakhandeling of connector Zaakhandeling->Zaakhandeling (A)
+    31;afbetalingsplan;Connector;EaConnectorHasLabelTag;08; Attribuut:AttribuutNaamAanwezig.;warning;No valid labeltags found for connector role afbetalingsplan of connector VoorstelGlobaalAfbetalingsplan->Afbetalingsplan (A)
+    32;aanvaarding;Connector;EaConnectorHasLabelTag;08; Attribuut:AttribuutNaamAanwezig.;warning;No valid labeltags found for connector role aanvaarding of connector AanvaardingGlobaalAfbetalingsplan->Afbetalingsplan (A)
+    33;afbetalingsplan;Connector;EaConnectorHasLabelTag;08; Attribuut:AttribuutNaamAanwezig.;warning;No valid labeltags found for connector role afbetalingsplan of connector Afbetalingsplan->Afbetalingsplan (A)
+    34;stuk;Connector;EaConnectorHasLabelTag;08; Attribuut:AttribuutNaamAanwezig.;warning;No valid labeltags found for connector role stuk of connector Zaakhandeling->Document (A)
+    35;voorstel;Connector;EaConnectorHasLabelTag;08; Attribuut:AttribuutNaamAanwezig.;warning;No valid labeltags found for connector role voorstel of connector AanvaardingGlobaalAfbetalingsplan->VoorstelGlobaalAfbetalingsplan (A)
+    36;isSuborganisatieVan;Connector;EaConnectorHasLabelTag;08; Attribuut:AttribuutNaamAanwezig.;warning;No valid labeltags found for connector role isSuborganisatieVan of connector PubliekeOrganisatie->PubliekeOrganisatie (A)
+    37;document;Connector;EaConnectorHasLabelTag;08; Attribuut:AttribuutNaamAanwezig.;warning;No valid labeltags found for connector role document of connector Dossier->Document (A)
+    38;Betwisting->Zaakhandeling (G);DiagramConnector;HiddenConnectorHasIgnoreTag;07; Attribuut:AanwezigInSpecEnDiagram.;warning;No ignore tags found for hidden connector Betwisting->Zaakhandeling (G)
+    39;VoorstelGlobaalAfbetalingsplan->Zaakhandeling (G);DiagramConnector;HiddenConnectorHasIgnoreTag;07; Attribuut:AanwezigInSpecEnDiagram.;warning;No ignore tags found for hidden connector VoorstelGlobaalAfbetalingsplan->Zaakhandeling (G)
+    40;AanvaardingGlobaalAfbetalingsplan->Zaakhandeling (G);DiagramConnector;HiddenConnectorHasIgnoreTag;07; Attribuut:AanwezigInSpecEnDiagram.;warning;No ignore tags found for hidden connector AanvaardingGlobaalAfbetalingsplan->Zaakhandeling (G)
+    41;Aanmaning->Zaakhandeling (G);DiagramConnector;HiddenConnectorHasIgnoreTag;07; Attribuut:AanwezigInSpecEnDiagram.;warning;No ignore tags found for hidden connector Aanmaning->Zaakhandeling (G)
+    42;schuldenaar;Connector;EaConnectorHasDefinitionTag;11; Attribuut:BeschrijvingAanwezig.;warning;No valid definition tags found for connector role schuldenaar(Schuldvordering->Schuldenaar (A))
+    43;schuldeiser;Connector;EaConnectorHasDefinitionTag;11; Attribuut:BeschrijvingAanwezig.;warning;No valid definition tags found for connector role schuldeiser(Schuldvordering->Schuldeiser (A))
+    44;Betaling->Schuldvordering (A);Connector;EaConnectorHasDefinitionTag;11; Attribuut:BeschrijvingAanwezig.;warning;No valid definition tags found for connector role betaling(Betaling->Schuldvordering (A))
+    45;Betaling->Schuldvordering (A);Connector;EaConnectorHasDefinitionTag;11; Attribuut:BeschrijvingAanwezig.;warning;No valid definition tags found for connector role schuldvordering(Betaling->Schuldvordering (A))
+    46;Afbetalingsplan->Schuldvordering (A);Connector;EaConnectorHasDefinitionTag;11; Attribuut:BeschrijvingAanwezig.;warning;No valid definition tags found for connector role afbetalingsplan(Afbetalingsplan->Schuldvordering (A))
+    47;Afbetalingsplan->Schuldvordering (A);Connector;EaConnectorHasDefinitionTag;11; Attribuut:BeschrijvingAanwezig.;warning;No valid definition tags found for connector role schuldvordering(Afbetalingsplan->Schuldvordering (A))
+    48;Schuldvordering->Betwisting (A);Connector;EaConnectorHasDefinitionTag;11; Attribuut:BeschrijvingAanwezig.;warning;No valid definition tags found for connector role schuldvordering(Schuldvordering->Betwisting (A))
+    49;Schuldvordering->Betwisting (A);Connector;EaConnectorHasDefinitionTag;11; Attribuut:BeschrijvingAanwezig.;warning;No valid definition tags found for connector role betwisting(Schuldvordering->Betwisting (A))
+    50;zaak;Connector;EaConnectorHasDefinitionTag;11; Attribuut:BeschrijvingAanwezig.;warning;No valid definition tags found for connector role zaak(Zaak->Zaakhandeling (A))
+    51;zaakhandeling;Connector;EaConnectorHasDefinitionTag;11; Attribuut:BeschrijvingAanwezig.;warning;No valid definition tags found for connector role zaakhandeling(Zaakhandeling->Zaakhandeling (A))
+    52;afbetalingsplan;Connector;EaConnectorHasDefinitionTag;11; Attribuut:BeschrijvingAanwezig.;warning;No valid definition tags found for connector role afbetalingsplan(VoorstelGlobaalAfbetalingsplan->Afbetalingsplan (A))
+    53;aanvaarding;Connector;EaConnectorHasDefinitionTag;11; Attribuut:BeschrijvingAanwezig.;warning;No valid definition tags found for connector role aanvaarding(AanvaardingGlobaalAfbetalingsplan->Afbetalingsplan (A))
+    54;afbetalingsplan;Connector;EaConnectorHasDefinitionTag;11; Attribuut:BeschrijvingAanwezig.;warning;No valid definition tags found for connector role afbetalingsplan(Afbetalingsplan->Afbetalingsplan (A))
+    55;afbetalingsplan;Connector;EaConnectorHasDefinitionTag;11; Attribuut:BeschrijvingAanwezig.;warning;No valid definition tags found for connector role afbetalingsplan(Betaling->Afbetalingsplan (A))
+    56;stuk;Connector;EaConnectorHasDefinitionTag;11; Attribuut:BeschrijvingAanwezig.;warning;No valid definition tags found for connector role stuk(Zaakhandeling->Document (A))
+    57;voorstel;Connector;EaConnectorHasDefinitionTag;11; Attribuut:BeschrijvingAanwezig.;warning;No valid definition tags found for connector role voorstel(AanvaardingGlobaalAfbetalingsplan->VoorstelGlobaalAfbetalingsplan (A))
+    58;wanbetalingsregeling;Connector;EaConnectorHasDefinitionTag;11; Attribuut:BeschrijvingAanwezig.;warning;No valid definition tags found for connector role wanbetalingsregeling(Schuldvordering->Wanbetalingsregeling (A))
+    59;isSuborganisatieVan;Connector;EaConnectorHasDefinitionTag;11; Attribuut:BeschrijvingAanwezig.;warning;No valid definition tags found for connector role isSuborganisatieVan(PubliekeOrganisatie->PubliekeOrganisatie (A))
+    60;document;Connector;EaConnectorHasDefinitionTag;11; Attribuut:BeschrijvingAanwezig.;warning;No valid definition tags found for connector role document(Dossier->Document (A))
+    61;betalingsdatum;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute Betaling::betalingsdatum has ignore tag but is not hidden.
+    62;bedrag;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute Betaling::bedrag has ignore tag but is not hidden.
+    63;stuk;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute Betaling::stuk has ignore tag but is not hidden.
+    64;identificator;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute Betaling::identificator has ignore tag but is not hidden.
+    65;identificator;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute JuridischWerk::identificator has ignore tag but is not hidden.
+    66;type;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute SociaalStatuut::type has ignore tag but is not hidden.
+    67;ingangsdatum;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute SociaalStatuut::ingangsdatum has ignore tag but is not hidden.
+    68;juridischeWerk;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute CollectieveSchuldenregeling::juridischeWerk has ignore tag but is not hidden.
+    69;schuldbemiddelaar;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute CollectieveSchuldenregeling::schuldbemiddelaar has ignore tag but is not hidden.
+    70;ingangsdatum;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute CollectieveSchuldenregeling::ingangsdatum has ignore tag but is not hidden.
+    71;valuta;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute Geldbedrag::valuta has ignore tag but is not hidden.
+    72;waarde;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute Geldbedrag::waarde has ignore tag but is not hidden.
+    73;type;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute Inkomst::type has ignore tag but is not hidden.
+    74;periodiciteit;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute Inkomst::periodiciteit has ignore tag but is not hidden.
+    75;bedrag;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute Inkomst::bedrag has ignore tag but is not hidden.
+    76;type;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute Uitgave::type has ignore tag but is not hidden.
+    77;periodiciteit;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute Uitgave::periodiciteit has ignore tag but is not hidden.
+    78;bedrag;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute Uitgave::bedrag has ignore tag but is not hidden.
+    79;zaakType;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute Zaak::zaakType has ignore tag but is not hidden.
+    80;schadeVergoeding;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute Wanbetalingsregeling::schadeVergoeding has ignore tag but is not hidden.
+    81;interest;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute Wanbetalingsregeling::interest has ignore tag but is not hidden.
+    82;juridischWerk;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute Onbekwaamverklaring::juridischWerk has ignore tag but is not hidden.
+    83;bewindvoerder;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute Onbekwaamverklaring::bewindvoerder has ignore tag but is not hidden.
+    84;ingangsdatum;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute Onbekwaamverklaring::ingangsdatum has ignore tag but is not hidden.
+    85;datum;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute Zaakhandeling::datum has ignore tag but is not hidden.
+    86;betatlingschema;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute Afbetalingsplan::betatlingschema has ignore tag but is not hidden.
+    87;bedrag;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute Afbetalingsplan::bedrag has ignore tag but is not hidden.
+    88;stuk;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute Afbetalingsplan::stuk has ignore tag but is not hidden.
+    89;GedwongenInvordering;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute ZaakType::GedwongenInvordering has ignore tag but is not hidden.
+    90;MinnelijkeInvordering;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute ZaakType::MinnelijkeInvordering has ignore tag but is not hidden.
+    91;GlobaalAfbetalingsplan;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute ZaakType::GlobaalAfbetalingsplan has ignore tag but is not hidden.
+    92;kalenderdag;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute Tijdsduur::kalenderdag has ignore tag but is not hidden.
+    93;werkdag;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute Tijdsduur::werkdag has ignore tag but is not hidden.
+    94;start;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute Tijdsinterval::start has ignore tag but is not hidden.
+    95;einde;Attribute;EaAttributeWithIgnoreTagIsHidden;07b; Attribuut:AanwezigInSpecEnDiagram.;warning;Attribute Tijdsinterval::einde has ignore tag but is not hidden.
+    96;hoofdbedrag;Attribute;EaAttributeRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of attribute Schuldvordering::hoofdbedrag (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    97;betalingstermijn;Attribute;EaAttributeRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of attribute Schuldvordering::betalingstermijn (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    98;datum;Attribute;EaAttributeRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of attribute Schuldvordering::datum (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    99;identificator;Attribute;EaAttributeRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of attribute Schuldvordering::identificator (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    100;stuk;Attribute;EaAttributeRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of attribute Schuldvordering::stuk (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    101;uitvoerbareTitel;Attribute;EaAttributeRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of attribute Schuldvordering::uitvoerbareTitel (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    102;schuldvorderingType;Attribute;EaAttributeRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of attribute Schuldvordering::schuldvorderingType (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    103;rechtspositie;Attribute;EaAttributeHasCardinality;10; Attribuut:KardinaliteitAanwezig.;warning;No valid cardinality defined for attribute Agent::rechtspositie
+    104;hoofdbedrag;Attribute;EaAttributeHasDefinitionTag;11; Attribuut:BeschrijvingAanwezig.;warning;No valid definition tag found for attribute Schuldvordering::hoofdbedrag
+    105;betalingstermijn;Attribute;EaAttributeHasDefinitionTag;11; Attribuut:BeschrijvingAanwezig.;warning;No valid definition tag found for attribute Schuldvordering::betalingstermijn
+    106;datum;Attribute;EaAttributeHasDefinitionTag;11; Attribuut:BeschrijvingAanwezig.;warning;No valid definition tag found for attribute Schuldvordering::datum
+    107;identificator;Attribute;EaAttributeHasDefinitionTag;11; Attribuut:BeschrijvingAanwezig.;warning;No valid definition tag found for attribute Schuldvordering::identificator
+    108;stuk;Attribute;EaAttributeHasDefinitionTag;11; Attribuut:BeschrijvingAanwezig.;warning;No valid definition tag found for attribute Schuldvordering::stuk
+    109;uitvoerbareTitel;Attribute;EaAttributeHasDefinitionTag;11; Attribuut:BeschrijvingAanwezig.;warning;No valid definition tag found for attribute Schuldvordering::uitvoerbareTitel
+    110;schuldvorderingType;Attribute;EaAttributeHasDefinitionTag;11; Attribuut:BeschrijvingAanwezig.;warning;No valid definition tag found for attribute Schuldvordering::schuldvorderingType
+    111;rechtspositie;Attribute;EaAttributeHasDefinitionTag;11; Attribuut:BeschrijvingAanwezig.;warning;No valid definition tag found for attribute Agent::rechtspositie
+    112;financieleToestand;Attribute;EaAttributeHasDefinitionTag;11; Attribuut:BeschrijvingAanwezig.;warning;No valid definition tag found for attribute Agent::financieleToestand
+    113;registratie;Attribute;EaAttributeHasDefinitionTag;11; Attribuut:BeschrijvingAanwezig.;warning;No valid definition tag found for attribute PubliekeOrganisatie::registratie
+    114;Schuldvordering;Element;EaElementRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of element Schuldvordering (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    115;Schuldenaar;Element;EaElementRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of element Schuldenaar (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    116;Schuldeiser;Element;EaElementRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of element Schuldeiser (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    117;Rechtspositie;Element;EaElementRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of element Rechtspositie (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    118;JuridischWerk;Element;EaElementRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of element JuridischWerk (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    119;Geldbedrag;Element;EaElementRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of element Geldbedrag (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    120;FinancieleToestand;Element;EaElementRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of element FinancieleToestand (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    121;SchuldvorderingType;Element;EaElementRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of element SchuldvorderingType (OSLO-Schuldbeheer-master) does not have an baseUri tag.
+    122;Document;Element;EaElementRefersToPackageWithBaseUri;15; URI:BaseUriAanwezig.;warning;Package of element Document (OSLO-Schuldbeheer-master) does not have an baseUri tag.

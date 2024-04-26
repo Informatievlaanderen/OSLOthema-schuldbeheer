@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>OSLO-Schuldbeheer  - Model Validation Report</title>
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+          integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+          crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+          integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+          crossorigin="anonymous"></script>
+
+  <!-- <link rel="stylesheet" href="styles.css"/> -->
+  <style type="text/css">body {
+  position: relative;
+  margin: 30px 0px;
+}
+
+.rule {
+  margin-bottom: 20px;
+}
+
+.severity-warning {
+}
+
+.dataRef {
+}
+
+.dataRef .tag-open,
+.dataRef .tag-close {
+    font-weight: bold;
+}
+
+.dataRef .dataRef-type {
+    color: darkgreen;
+}
+
+.dataRef .dataRef-element {
+    color: blue;
+}</style>
+</head>
+
+<body>
+
+<div id="content" class="container">
+
+  <h1>OSLO-Schuldbeheer <small>Model Validation Report</small></h1>
+
+  <table>
+    <tr><th>Diagram</th><td>OSLO-Schuldbeheer</td></tr>
+    <tr><th>File</th><td>OSLO-Schuldbeheer.eap</td></tr>
+    <tr><th>Time</th><td>2024/04/26</td></tr>
+  </table>
+
+  <ul>
+        <li><a href="#severity-error"><span class="badge badge-danger">error</span> 0</a></li>
+
+        <li><a href="#severity-warning"><span class="badge badge-warning">warning</span> 122</a></li>
+
+        <li><a href="#severity-deprecation"><span class="badge badge-warning">deprecation</span> 0</a></li>
+
+        <li><a href="#severity-suggestion"><span class="badge badge-light">suggestion</span> 0</a></li>
+
+  </ul>
+
+
+
+  <h3>Validations</h3>
+  <div>
+    <ul>
+      <li>
+        <h4 id="severity-warning">warning <span class="badge badge-warning">122</span></h4>
+        <ul>
+          <li>
+            <div class="rule">
+              <h5>Test 02: GeenOntbrekendeElementenInOverzicht.</h5>
+              <table>
+                <tr>
+                  <th>ValidationClass:</th>
+                  <td>EaElementHasLabelTag</td>
+                </tr>
+                <tr>
+                  <th>Description:</th>
+                  <td>Label-tag should be set for elements.</td>
+                </tr>
+                <tr>
+                  <th>Issues:</th>
+                  <td>
+                    <ul>
+                                  <li>No valid labeltags found for element Rechtspositie</li>
+
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </li><li>
+            <div class="rule">
+              <h5>Test 05: GeenOntbrekendeElementenInOverzicht.</h5>
+              <table>
+                <tr>
+                  <th>ValidationClass:</th>
+                  <td>EaElementHasDefinitionTag</td>
+                </tr>
+                <tr>
+                  <th>Description:</th>
+                  <td>Definition-tag should be set for elements.</td>
+                </tr>
+                <tr>
+                  <th>Issues:</th>
+                  <td>
+                    <ul>
+                                  <li>No valid definitiontags found for Schuldvordering</li>
+
+                                  <li>No valid definitiontags found for Schuldenaar</li>
+
+                                  <li>No valid definitiontags found for Schuldeiser</li>
+
+                                  <li>No valid definitiontags found for Rechtspositie</li>
+
+                                  <li>No valid definitiontags found for JuridischWerk</li>
+
+                                  <li>No valid definitiontags found for Geldbedrag</li>
+
+                                  <li>No valid definitiontags found for FinancieleToestand</li>
+
+                                  <li>No valid definitiontags found for Document</li>
+
+                                  <li>No valid definitiontags found for Tijdspanne</li>
+
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </li><li>
+            <div class="rule">
+              <h5>Test 07b: Attribuut:AanwezigInSpecEnDiagram.</h5>
+              <table>
+                <tr>
+                  <th>ValidationClass:</th>
+                  <td>EaAttributeWithIgnoreTagIsHidden</td>
+                </tr>
+                <tr>
+                  <th>Description:</th>
+                  <td>Attribuut getoond met ignore-true-tag.</td>
+                </tr>
+                <tr>
+                  <th>Issues:</th>
+                  <td>
+                    <ul>
+                                  <li>Attribute Betaling::betalingsdatum has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute Betaling::bedrag has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute Betaling::stuk has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute Betaling::identificator has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute JuridischWerk::identificator has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute SociaalStatuut::type has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute SociaalStatuut::ingangsdatum has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute CollectieveSchuldenregeling::juridischeWerk has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute CollectieveSchuldenregeling::schuldbemiddelaar has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute CollectieveSchuldenregeling::ingangsdatum has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute Geldbedrag::valuta has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute Geldbedrag::waarde has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute Inkomst::type has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute Inkomst::periodiciteit has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute Inkomst::bedrag has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute Uitgave::type has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute Uitgave::periodiciteit has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute Uitgave::bedrag has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute Zaak::zaakType has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute Wanbetalingsregeling::schadeVergoeding has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute Wanbetalingsregeling::interest has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute Onbekwaamverklaring::juridischWerk has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute Onbekwaamverklaring::bewindvoerder has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute Onbekwaamverklaring::ingangsdatum has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute Zaakhandeling::datum has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute Afbetalingsplan::betatlingschema has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute Afbetalingsplan::bedrag has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute Afbetalingsplan::stuk has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute ZaakType::GedwongenInvordering has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute ZaakType::MinnelijkeInvordering has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute ZaakType::GlobaalAfbetalingsplan has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute Tijdsduur::kalenderdag has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute Tijdsduur::werkdag has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute Tijdsinterval::start has ignore tag but is not hidden.</li>
+
+                                  <li>Attribute Tijdsinterval::einde has ignore tag but is not hidden.</li>
+
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </li><li>
+            <div class="rule">
+              <h5>Test 07: Attribuut:AanwezigInSpecEnDiagram.</h5>
+              <table>
+                <tr>
+                  <th>ValidationClass:</th>
+                  <td>HiddenConnectorHasIgnoreTag</td>
+                </tr>
+                <tr>
+                  <th>Description:</th>
+                  <td>Hidden connector should have a ignore-tag.</td>
+                </tr>
+                <tr>
+                  <th>Issues:</th>
+                  <td>
+                    <ul>
+                                  <li>No ignore tags found for hidden connector Betwisting-&gt;Zaakhandeling (G)</li>
+
+                                  <li>No ignore tags found for hidden connector VoorstelGlobaalAfbetalingsplan-&gt;Zaakhandeling (G)</li>
+
+                                  <li>No ignore tags found for hidden connector AanvaardingGlobaalAfbetalingsplan-&gt;Zaakhandeling (G)</li>
+
+                                  <li>No ignore tags found for hidden connector Aanmaning-&gt;Zaakhandeling (G)</li>
+
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </li><li>
+            <div class="rule">
+              <h5>Test 08: Attribuut:AttribuutNaamAanwezig.</h5>
+              <table>
+                <tr>
+                  <th>ValidationClass:</th>
+                  <td>EaConnectorHasLabelTag</td>
+                </tr>
+                <tr>
+                  <th>Description:</th>
+                  <td>Connector needs to have a valid label-tag.</td>
+                </tr>
+                <tr>
+                  <th>Issues:</th>
+                  <td>
+                    <ul>
+                                  <li>No valid labeltags found for connector role zaak of connector Zaak-&gt;Zaakhandeling (A)</li>
+
+                                  <li>No valid labeltags found for connector role zaakhandeling of connector Zaakhandeling-&gt;Zaakhandeling (A)</li>
+
+                                  <li>No valid labeltags found for connector role afbetalingsplan of connector VoorstelGlobaalAfbetalingsplan-&gt;Afbetalingsplan (A)</li>
+
+                                  <li>No valid labeltags found for connector role aanvaarding of connector AanvaardingGlobaalAfbetalingsplan-&gt;Afbetalingsplan (A)</li>
+
+                                  <li>No valid labeltags found for connector role afbetalingsplan of connector Afbetalingsplan-&gt;Afbetalingsplan (A)</li>
+
+                                  <li>No valid labeltags found for connector role stuk of connector Zaakhandeling-&gt;Document (A)</li>
+
+                                  <li>No valid labeltags found for connector role voorstel of connector AanvaardingGlobaalAfbetalingsplan-&gt;VoorstelGlobaalAfbetalingsplan (A)</li>
+
+                                  <li>No valid labeltags found for connector role isSuborganisatieVan of connector PubliekeOrganisatie-&gt;PubliekeOrganisatie (A)</li>
+
+                                  <li>No valid labeltags found for connector role document of connector Dossier-&gt;Document (A)</li>
+
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </li><li>
+            <div class="rule">
+              <h5>Test 10: Attribuut:KardinaliteitAanwezig.</h5>
+              <table>
+                <tr>
+                  <th>ValidationClass:</th>
+                  <td>EaAttributeHasCardinality</td>
+                </tr>
+                <tr>
+                  <th>Description:</th>
+                  <td>Attribute needs to have lowerBound/upperBound values.</td>
+                </tr>
+                <tr>
+                  <th>Issues:</th>
+                  <td>
+                    <ul>
+                                  <li>No valid cardinality defined for attribute Agent::rechtspositie</li>
+
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </li><li>
+            <div class="rule">
+              <h5>Test 10: Attribuut:KardinaliteitAanwezig.</h5>
+              <table>
+                <tr>
+                  <th>ValidationClass:</th>
+                  <td>EaConnectorHasCardinality</td>
+                </tr>
+                <tr>
+                  <th>Description:</th>
+                  <td>Connector needs to have source/destination cardinality values.</td>
+                </tr>
+                <tr>
+                  <th>Issues:</th>
+                  <td>
+                    <ul>
+                                  <li>No valid source cardinality defined for connector schuldvordering (Schuldvordering-&gt;Betwisting (A)): null.</li>
+
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </li><li>
+            <div class="rule">
+              <h5>Test 11: Attribuut:BeschrijvingAanwezig.</h5>
+              <table>
+                <tr>
+                  <th>ValidationClass:</th>
+                  <td>EaConnectorHasDefinitionTag</td>
+                </tr>
+                <tr>
+                  <th>Description:</th>
+                  <td>Connector needs to have a valid definition-tag.</td>
+                </tr>
+                <tr>
+                  <th>Issues:</th>
+                  <td>
+                    <ul>
+                                  <li>No valid definition tags found for connector role schuldenaar(Schuldvordering-&gt;Schuldenaar (A))</li>
+
+                                  <li>No valid definition tags found for connector role schuldeiser(Schuldvordering-&gt;Schuldeiser (A))</li>
+
+                                  <li>No valid definition tags found for connector role betaling(Betaling-&gt;Schuldvordering (A))</li>
+
+                                  <li>No valid definition tags found for connector role schuldvordering(Betaling-&gt;Schuldvordering (A))</li>
+
+                                  <li>No valid definition tags found for connector role afbetalingsplan(Afbetalingsplan-&gt;Schuldvordering (A))</li>
+
+                                  <li>No valid definition tags found for connector role schuldvordering(Afbetalingsplan-&gt;Schuldvordering (A))</li>
+
+                                  <li>No valid definition tags found for connector role schuldvordering(Schuldvordering-&gt;Betwisting (A))</li>
+
+                                  <li>No valid definition tags found for connector role betwisting(Schuldvordering-&gt;Betwisting (A))</li>
+
+                                  <li>No valid definition tags found for connector role zaak(Zaak-&gt;Zaakhandeling (A))</li>
+
+                                  <li>No valid definition tags found for connector role zaakhandeling(Zaakhandeling-&gt;Zaakhandeling (A))</li>
+
+                                  <li>No valid definition tags found for connector role afbetalingsplan(VoorstelGlobaalAfbetalingsplan-&gt;Afbetalingsplan (A))</li>
+
+                                  <li>No valid definition tags found for connector role aanvaarding(AanvaardingGlobaalAfbetalingsplan-&gt;Afbetalingsplan (A))</li>
+
+                                  <li>No valid definition tags found for connector role afbetalingsplan(Afbetalingsplan-&gt;Afbetalingsplan (A))</li>
+
+                                  <li>No valid definition tags found for connector role afbetalingsplan(Betaling-&gt;Afbetalingsplan (A))</li>
+
+                                  <li>No valid definition tags found for connector role stuk(Zaakhandeling-&gt;Document (A))</li>
+
+                                  <li>No valid definition tags found for connector role voorstel(AanvaardingGlobaalAfbetalingsplan-&gt;VoorstelGlobaalAfbetalingsplan (A))</li>
+
+                                  <li>No valid definition tags found for connector role wanbetalingsregeling(Schuldvordering-&gt;Wanbetalingsregeling (A))</li>
+
+                                  <li>No valid definition tags found for connector role isSuborganisatieVan(PubliekeOrganisatie-&gt;PubliekeOrganisatie (A))</li>
+
+                                  <li>No valid definition tags found for connector role document(Dossier-&gt;Document (A))</li>
+
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </li><li>
+            <div class="rule">
+              <h5>Test 11: Attribuut:BeschrijvingAanwezig.</h5>
+              <table>
+                <tr>
+                  <th>ValidationClass:</th>
+                  <td>EaAttributeHasDefinitionTag</td>
+                </tr>
+                <tr>
+                  <th>Description:</th>
+                  <td>Attribute needs to have a valid definition-tag.</td>
+                </tr>
+                <tr>
+                  <th>Issues:</th>
+                  <td>
+                    <ul>
+                                  <li>No valid definition tag found for attribute Schuldvordering::hoofdbedrag</li>
+
+                                  <li>No valid definition tag found for attribute Schuldvordering::betalingstermijn</li>
+
+                                  <li>No valid definition tag found for attribute Schuldvordering::datum</li>
+
+                                  <li>No valid definition tag found for attribute Schuldvordering::identificator</li>
+
+                                  <li>No valid definition tag found for attribute Schuldvordering::stuk</li>
+
+                                  <li>No valid definition tag found for attribute Schuldvordering::uitvoerbareTitel</li>
+
+                                  <li>No valid definition tag found for attribute Schuldvordering::schuldvorderingType</li>
+
+                                  <li>No valid definition tag found for attribute Agent::rechtspositie</li>
+
+                                  <li>No valid definition tag found for attribute Agent::financieleToestand</li>
+
+                                  <li>No valid definition tag found for attribute PubliekeOrganisatie::registratie</li>
+
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </li><li>
+            <div class="rule">
+              <h5>Test 15: URI:BaseUriAanwezig.</h5>
+              <table>
+                <tr>
+                  <th>ValidationClass:</th>
+                  <td>EaElementRefersToPackageWithBaseUri</td>
+                </tr>
+                <tr>
+                  <th>Description:</th>
+                  <td>Package heeft geen baseURI.</td>
+                </tr>
+                <tr>
+                  <th>Issues:</th>
+                  <td>
+                    <ul>
+                                  <li>Package of element Schuldvordering (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                                  <li>Package of element Schuldenaar (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                                  <li>Package of element Schuldeiser (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                                  <li>Package of element Rechtspositie (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                                  <li>Package of element JuridischWerk (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                                  <li>Package of element Geldbedrag (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                                  <li>Package of element FinancieleToestand (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                                  <li>Package of element SchuldvorderingType (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                                  <li>Package of element Document (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </li><li>
+            <div class="rule">
+              <h5>Test 15: URI:BaseUriAanwezig.</h5>
+              <table>
+                <tr>
+                  <th>ValidationClass:</th>
+                  <td>EaConnectorRefersToPackageWithBaseUri</td>
+                </tr>
+                <tr>
+                  <th>Description:</th>
+                  <td>Package heeft geen baseURI.</td>
+                </tr>
+                <tr>
+                  <th>Issues:</th>
+                  <td>
+                    <ul>
+                                  <li>Package of role schuldenaar of connector Schuldvordering-&gt;Schuldenaar (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                                  <li>Package of role schuldeiser of connector Schuldvordering-&gt;Schuldeiser (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                                  <li>Package of role betaling of connector Betaling-&gt;Schuldvordering (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                                  <li>Package of role schuldvordering of connector Betaling-&gt;Schuldvordering (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                                  <li>Package of role afbetalingsplan of connector Afbetalingsplan-&gt;Schuldvordering (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                                  <li>Package of role schuldvordering of connector Afbetalingsplan-&gt;Schuldvordering (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                                  <li>Package of role schuldvordering of connector Schuldvordering-&gt;Betwisting (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                                  <li>Package of role betwisting of connector Schuldvordering-&gt;Betwisting (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                                  <li>Package of role zaak of connector Zaak-&gt;Zaakhandeling (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                                  <li>Package of role zaakhandeling of connector Zaakhandeling-&gt;Zaakhandeling (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                                  <li>Package of role afbetalingsplan of connector VoorstelGlobaalAfbetalingsplan-&gt;Afbetalingsplan (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                                  <li>Package of role aanvaarding of connector AanvaardingGlobaalAfbetalingsplan-&gt;Afbetalingsplan (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                                  <li>Package of role afbetalingsplan of connector Afbetalingsplan-&gt;Afbetalingsplan (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                                  <li>Package of role afbetalingsplan of connector Betaling-&gt;Afbetalingsplan (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                                  <li>Package of role stuk of connector Zaakhandeling-&gt;Document (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                                  <li>Package of role voorstel of connector AanvaardingGlobaalAfbetalingsplan-&gt;VoorstelGlobaalAfbetalingsplan (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                                  <li>Package of role wanbetalingsregeling of connector Schuldvordering-&gt;Wanbetalingsregeling (A) (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </li><li>
+            <div class="rule">
+              <h5>Test 15: URI:BaseUriAanwezig.</h5>
+              <table>
+                <tr>
+                  <th>ValidationClass:</th>
+                  <td>EaAttributeRefersToPackageWithBaseUri</td>
+                </tr>
+                <tr>
+                  <th>Description:</th>
+                  <td>Package heeft geen baseURI.</td>
+                </tr>
+                <tr>
+                  <th>Issues:</th>
+                  <td>
+                    <ul>
+                                  <li>Package of attribute Schuldvordering::hoofdbedrag (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                                  <li>Package of attribute Schuldvordering::betalingstermijn (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                                  <li>Package of attribute Schuldvordering::datum (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                                  <li>Package of attribute Schuldvordering::identificator (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                                  <li>Package of attribute Schuldvordering::stuk (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                                  <li>Package of attribute Schuldvordering::uitvoerbareTitel (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                                  <li>Package of attribute Schuldvordering::schuldvorderingType (OSLO-Schuldbeheer-master) does not have an baseUri tag.</li>
+
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+
+
+</div>
+
+</body>
+
+</html>
