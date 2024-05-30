@@ -1,6 +1,6 @@
 [
     {
-        "name": "schuldbeheer-voc",
+        "name": "schuldbeheer",
         "type": "voc",
         "eap": "OSLO-Schuldbeheer.eap",
         "diagram": "OSLO-Schuldbeheer-master",
@@ -13,13 +13,14 @@
         "contributors-column": "MijnKolom",
         "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-schuldbeheer/issues",
         "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html"
-    },     {
+    },
+    {
         "name": "schuldbeheer-ap",
         "type": "ap",
         "eap": "OSLO-Schuldbeheer.eap",
         "diagram": "OSLO-Schuldbeheer-master",
-        "template": "schuldbeheer-voc.j2",
-        "title": "OSLO Schuldbeheer",
+        "template": "schuldbeheer-ap.j2",
+        "title": "OSLO Schuldbeheer - Applicatieprofiel",
         "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
         "publication-date": "2024-05-30",
         "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
