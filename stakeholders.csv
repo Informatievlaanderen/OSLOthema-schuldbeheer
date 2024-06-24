@@ -1,26 +1,26 @@
-Voornaam,Naam,Affiliatie,E-mail,Website,MijnKolom
-Stefan ,Somers,Stad Gent,,,A
-Bert,Verstraeten,Stad Gent,,,A
-Hans ,Van Den Brande,Stad Gent,,,A
-Mathieu,Tulpinck,Digitaal Vlaanderen,,,E
-Els,de Vleeschauwer,Digitaal Vlaanderen,,,E
-Ben,De Meester,Digitaal Vlaanderen,,,E
-Aline,Verbrugge,Digitaal Vlaanderen,,,E
-Isabaut,Martens,Digitaal Vlaanderen,,,E
-Laurens,Vercauteren,Digitaal Vlaanderen,,,E
-Janis,Sevens,ABB,,,C
-Tina,Tyteca,ABB,,,C
-Miet,Remans,VVSG,,,C
-Ben,Gilot,VVSG,,,C
-Wietske,Van Gils,SAM vzw,,,C
-Robin,Van Trigt,SAM vzw,,,C
-Elke,Demeulenaere,Gemeente Destelbergen,,,C
-Kurt,Schelfhout,Stad Aalst,,,C
-Mieke,De Vreese,Gemeente Aalter,,,C
-Filip,Staes,Stad Leuven,,,C
-Michèle,Marichal,Stad Roeselare,,,C
-Barbara,Ide,Gemeente Zulte,,,C
-Ben,Van Damme,Risolto,,,C
-Joannes,Verbeke,Risolto,,,C
-Quinten,Heldens,Departement Financiën en Begroting,,,C
-Katia,De Vos,,,,C
+Voornaam;Naam;Affiliatie;E-mail;Website;MijnKolom
+Stefan;Somers;Stad Gent;;;A
+Bert;Verstraeten;Stad Gent;;;A
+Hans;Van Den Brande;Stad Gent;;;A
+Mathieu;Tulpinck;Digitaal Vlaanderen;;;E
+Els;de Vleeschauwer;Digitaal Vlaanderen;;;E
+Ben;De Meester;Digitaal Vlaanderen;;;E
+Aline;Verbrugge;Digitaal Vlaanderen;;;E
+Isabaut;Martens;Digitaal Vlaanderen;;;E
+Laurens;Vercauteren;Digitaal Vlaanderen;;;E
+Janis;Sevens;ABB;;;C
+Tina;Tyteca;ABB;;;C
+Miet;Remans;VVSG;;;C
+Ben;Gilot;VVSG;;;C
+Wietske;Van Gils;SAM vzw;;;C
+Robin;Van Trigt;SAM vzw;;;C
+Elke;Demeulenaere;Gemeente Destelbergen;;;C
+Kurt;Schelfhout;Stad Aalst;;;C
+Mieke;De Vreese;Gemeente Aalter;;;C
+Filip;Staes;Stad Leuven;;;C
+MichÃ¨le;Marichal;Stad Roeselare;;;C
+Barbara;Ide;Gemeente Zulte;;;C
+Ben;Van Damme;Risolto;;;C
+Joannes;Verbeke;Risolto;;;C
+Quinten;Heldens;Departement FinanciÃ«n en Begroting;;;C
+Katia;De Vos;;;;C
