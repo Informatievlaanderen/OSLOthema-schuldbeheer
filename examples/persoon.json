@@ -1,0 +1,19 @@
+{
+  "@id": "flanders.be/Els",
+  "@type":"GeregistreerdPersoon",
+  "solvabiliteitsProfiel": {
+    "afgeleidVan": [
+      {
+        "@type": "SociaalStatuut",
+        "type": "codelijst.be/sociaal/leefloon",
+        "toegekendDoor": "flanders.be/gov#me",
+        "startdatum": "2023-01-01"
+      },
+      {
+        "@type": "Solvabiliteitsindicator",
+        "type": "codelijst.be/OCMWGent/onderBudgetBeheer",
+        "startdatum":"2024-01-01"
+      }
+    ]
+  }
+}
