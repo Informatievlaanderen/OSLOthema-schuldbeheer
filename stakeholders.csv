@@ -1,26 +1,31 @@
 Voornaam;Naam;Affiliatie;E-mail;Website;MijnKolom
-Stefan;Somers;Stad Gent;;;A
-Bert;Verstraeten;Stad Gent;;;A
-Hans;Van Den Brande;Stad Gent;;;A
-Mathieu;Tulpinck;Digitaal Vlaanderen;;;E
-Els;de Vleeschauwer;Digitaal Vlaanderen;;;E
-Ben;De Meester;Digitaal Vlaanderen;;;E
-Aline;Verbrugge;Digitaal Vlaanderen;;;E
-Isabaut;Martens;Digitaal Vlaanderen;;;E
-Laurens;Vercauteren;Digitaal Vlaanderen;;;E
-Janis;Sevens;ABB;;;C
-Tina;Tyteca;ABB;;;C
-Miet;Remans;VVSG;;;C
-Ben;Gilot;VVSG;;;C
-Wietske;Van Gils;SAM vzw;;;C
-Robin;Van Trigt;SAM vzw;;;C
-Elke;Demeulenaere;Gemeente Destelbergen;;;C
-Kurt;Schelfhout;Stad Aalst;;;C
-Mieke;De Vreese;Gemeente Aalter;;;C
-Filip;Staes;Stad Leuven;;;C
-Michèle;Marichal;Stad Roeselare;;;C
-Barbara;Ide;Gemeente Zulte;;;C
-Ben;Van Damme;Risolto;;;C
-Joannes;Verbeke;Risolto;;;C
-Quinten;Heldens;Departement Financiën en Begroting;;;C
-Katia;De Vos;;;;C
+Stefan;Somers;Stad Gent;;https://stad.gent/nl;A
+Bert;Verstraeten;Stad Gent;;https://stad.gent/nl;A
+Hans;Van Den Brande;Stad Gent;;https://stad.gent/nl;A
+Mathieu;Tulpinck;Digitaal Vlaanderen;mathieu.tulpinck@vlaanderen.be;https://www.vlaanderen.be/digitaal-vlaanderen;E
+Els;de Vleeschauwer;Digitaal Vlaanderen;els.devleeschauwer@vlaanderen.be;https://www.vlaanderen.be/digitaal-vlaanderen;E
+Ben;De Meester;Digitaal Vlaanderen;ben.demeester@vlaanderen.be;https://www.vlaanderen.be/digitaal-vlaanderen;E
+Aline;Verbrugge;Digitaal Vlaanderen;aline.verbrugge@vlaanderen.be;https://www.vlaanderen.be/digitaal-vlaanderen;E
+Isabaut;Martens;Digitaal Vlaanderen;isabaut.martens@vlaanderen.be;https://www.vlaanderen.be/digitaal-vlaanderen;E
+Laurens;Vercauteren;Digitaal Vlaanderen;laurens.vercauteren@vlaanderen.be;https://www.vlaanderen.be/digitaal-vlaanderen;E
+Janis;Sevens;Agentschap Binnenlands Bestuur;janis.sevens@vlaanderen.be;https://www.vlaanderen.be/agentschap-binnenlands-bestuur;C
+Tina;Tyteca;Agentschap Binnenlands Bestuur;;https://www.vlaanderen.be/agentschap-binnenlands-bestuur;C
+Miet;Remans;Vereniging van Vlaamse Steden en Gemeenten;;https://www.vvsg.be/;C
+Ben;Gilot;Vereniging van Vlaamse Steden en Gemeenten;;https://www.vvsg.be/;C
+Wietske;Van Gils;"SAM; steunpunt Mens en Samenleving";;https://www.samvzw.be/;C
+Robin;Van Trigt;"SAM; steunpunt Mens en Samenleving";;https://www.samvzw.be/;C
+Elke;Demeulenaere;Gemeente Destelbergen;;https://www.destelbergen.be/;C
+Kurt;Schelfhout;Stad Aalst;;https://aalst.be/;C
+Mieke;De Vreese;Gemeente Aalter;;https://www.aalter.be/;C
+Filip;Staes;Stad Leuven;;https://leuven.be/;C
+Michèle;Marichal;Stad Roeselare;;https://www.roeselare.be/;C
+Barbara;Ide;Gemeente Zulte;;https://www.zulte.be/;C
+Ben;Van Damme;Risolto;;https://risolto.be/en/;C
+Joannes;Verbeke;Risolto;;https://risolto.be/en/;C
+Quinten;Heldens;Departement Financiën en Begroting;;https://www.vlaanderen.be/organisaties/administratieve-diensten-van-de-vlaamse-overheid/beleidsdomein-financien-en-begroting/departement-financien-en-begroting;C
+Katia;De Vos;Recht.gent;;https://recht.gent/;C
+Annelies;Demeurie;Gemeente Zulte;;https://www.zulte.be/;C
+Sven;Verbeeck;Stad Antwerpen;;https://www.antwerpen.be/;C
+Simon;Vander Elst;Lokaal Digitaal;simon.vanderelst@vlaanderen.be;https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/lokaal-digitaal;C
+Danny;Lievens;Agentschap Binnenlands Bestuur;danny.lievens@vlaanderen.be;https://www.vlaanderen.be/agentschap-binnenlands-bestuur;C
+

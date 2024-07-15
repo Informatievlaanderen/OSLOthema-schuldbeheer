@@ -1,7 +1,10 @@
 {
   "@id": "flanders.be/Els",
   "@type":"GeregistreerdPersoon",
-  "solvabiliteitsProfiel": {
+  "solvabiliteitsprofiel": {
+    "@type": "Solvabiliteitsprofiel",
+    "startdatum": "2024-03-01",
+    "bepaaldDoor": "flanders.be/StadGent",
     "afgeleidVan": [
       {
         "@type": "SociaalStatuut",
