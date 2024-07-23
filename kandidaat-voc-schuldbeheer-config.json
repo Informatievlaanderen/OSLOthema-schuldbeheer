@@ -2,7 +2,7 @@
   "title": "Vocabularium Schuldbeheer",
   "category": "Vocabularium",
   "usage": "Aanbevolen (vrijwillig)",
-  "status": "standaard-in-ontwikkeling",
+  "status": "kandiaat-standaard",
   "descriptionFileName": "voc-schuldbeheer-config.md",
   "responsibleOrganisation": [
     {
@@ -10,7 +10,7 @@
       "resourceReference": "https://data.vlaanderen.be/id/organisatie/OVO002949"
     }
   ],
-  "publicationDate": "2024-07-23",
+  "publicationDate": "2024-09-05",
   "specificationDocuments": [
     {
       "name": "Vocabularium Schuldbeheer",
