@@ -19,3 +19,11 @@ The organisation and meaning of the git branches are documented in this table.
 | Branch | Purpose | Active (y/n) |
 | ------ | --------- | ---------------- | 
 |  |  |  |
+
+## Publishing
+
+To publish in the test environment, update [https://github.com/Informatievlaanderen/Data.Vlaanderen.be/blob/test/config/test/schuldbeheer.publication.json](https://github.com/Informatievlaanderen/Data.Vlaanderen.be/blob/test/config/test/schuldbeheer.publication.json)
+
+To publish in the production environment, update [https://github.com/Informatievlaanderen/Data.Vlaanderen.be/blob/production/config/production/schuldbeheer.publication.json](https://github.com/Informatievlaanderen/Data.Vlaanderen.be/blob/production/config/production/schuldbeheer.publication.json)
+
+To publication progress and potential reported errors can be followed [here](https://app.circleci.com/pipelines/github/Informatievlaanderen/Data.Vlaanderen.be) 
