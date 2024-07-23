@@ -170,3 +170,8 @@ The date on which the data standard was accepted as an acknowledged standard by 
 ### `dateRecognitionSteeringCommittee`
 
 The date on which the data standard was accepted as an acknowledged standard by the steering committee 'Flemish Information and ICT policy'.
+
+
+## Publishing
+
+To publish, update [https://github.com/Informatievlaanderen/OSLO-Standaarden/blob/configuratie/standaardenregister.json](https://github.com/Informatievlaanderen/OSLO-Standaarden/blob/configuratie/standaardenregister.json)
