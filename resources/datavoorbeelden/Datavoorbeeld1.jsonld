@@ -1,0 +1,172 @@
+{
+  "@context": [
+    "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-schuldbeheer/main/resources/Datavoorbeelden/context.jsonld",
+    {
+      "xsd": "http://www.w3.org/2001/XMLSchema#"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "_:Schuldvordering001",
+      "@type": "Schuldvordering",
+      "Activiteit.startdatum": {
+          "@type": "xsd:date",
+          "@value": "2024-04-01"
+        },
+      "Activiteit.werdGestartDoor": "_:opvang_Sloeberke",
+      "Schuldvordering.schuldenaar": "_:burger_Alice",
+      "Schuldvordering.schuldeiser": "_:Stad_Gent",
+      "Activiteit.genereert": "_:Factuur123",
+      "Schuldvordering.hoofdSom": {
+          "@type": "Geldbedrag",
+          "Geldbedrag.waarde": 120,
+          "Geldbedrag.valuta": "EUR"
+        },
+      "Schuldvordering.uitersteBetaaldatum": {
+        "@type": "xsd:date",
+        "@value": "2024-04-15"
+        },
+      "Schuldvordering.aanleiding": {
+        "@type": "Resource",
+        "http://purl.org/dc/terms/description": "naschoolse opvang maart 2024"
+        },
+      "Schuldvordering.schuldvorderingscategorie" : "_:Schuldvorderingscategorie001",
+      "SchuldvorderingtoerekeningVanBetaling": [
+        "_:ToerekeningVanBetaling001"
+      ],
+      "schuldvorderingssaldo": {
+        "@type": "Schuldvorderingssaldo",
+        "Saldo.saldobedrag": {
+          "@type": "GeldBedrag",
+          "Geldbedrag.waarde": 0,
+          "Geldbedrag.valuta": "EUR"
+        },
+        "Saldo.saldodatum":{
+          "@type": "xsd:date",
+          "@value": "2024-04-11"
+        }
+      },
+      "Activiteit.einddatum": {
+        "@type": "xsd:date",
+        "@value": "2024-04-10"
+      }
+    },
+    {
+      "@id": "_:Schuldvorderingscategorie001",
+      "@type": "Schuldvorderingscategorie",
+      "Schuldvorderingscategorie.fiscaal": {
+        "@type": "xsd:boolean",
+        "@value": "false"
+      },
+      "Schuldvorderingscategorie.naam": "factuur kinderopvang",
+      "Schuldvorderingscategorie.verjaringstermijn": {
+        "@type": "xsd:duration",
+        "@value": "P2Y"
+      }
+    },
+    {
+      "@id": "_:Betaling001",
+      "@type": "Betaling",
+      "Betaling.betaaldBedrag": {
+        "@type": "GeldBedrag",
+        "waarde": 120,
+        "valuta": "EUR"
+      },
+      "Betaling.betalingsdatum": "2024-04-10"
+    },
+    {
+      "@id": "_:ToerekeningVanBetaling001",
+      "@type": "ToerekeningVanBetaling",
+      "ToerekeningVanBetaling.toegerekendBedrag": {
+        "@type": "GeldBedrag",
+        "Geldbedrag.waarde": 120,
+        "Geldbedrag.valuta": "EUR"
+      },
+      "ToerekeningVanBetaling.toegerekendeBetaling": "_:Betaling001"
+    },
+    {
+      "@id": "_:Schuldvordering002",
+      "@type": "Schuldvordering",
+      "Activiteit.startdatum": {
+        "@type": "xsd:date",
+        "@value": "2023-12-20"
+      },
+      "Activiteit.werdGestartDoor": "_:Stad_Gent/Dienst_Belastingen",
+      "Schuldvordering.schuldenaar": "_:burger_Alice",
+      "Schuldvordering.schuldeiser": "_:Stad_Gent",
+      "Activiteit.genereert": "_:Belasting123",
+      "Schuldvordering.hoofdSom": {
+        "@type": "Geldbedrag",
+        "Geldbedrag.waarde": 325,
+        "Geldbedrag.valuta": "EUR"
+      },
+      "Schuldvordering.uitersteBetaaldatum": {
+        "@type": "xsd:date",
+        "@value": "2024-01-02"
+      },
+      "Schuldvordering.aanleiding": {
+        "@type": "Resource",
+        "http://purl.org/dc/terms/description": "Belasting op takelen, kenteken 1ABC123, 2023-12-15"
+      },
+      "Schuldvordering.grondslag": "_:Stad_Gent/Gemeentereglement_over_takelen",
+      "Schuldvordering.schuldvorderingscategorie" : "_:Schuldvorderingscategorie002",
+      "Schuldvordering.toerekeningVanBetaling": ["_:ToerekeningVanBetaling001"],
+      "Schuldvordering.wanbetalingsvergoeding": ["_Wanebtalingsvergoeding001"],
+      "Schuldvordering.aanmaning": [
+        {
+          "@type": "Aanmaning",
+          "Aanmaning.aanmaningsdatum": {
+            "@type": "xsd:date",
+            "@value": "2024-01-16"
+          }
+        },
+        {
+          "@type": "Aanmaning",
+          "Aanmaning.aanmaningsdatum": {
+            "@type": "xsd:date",
+            "@value": "2024-01-30"
+          },
+          "Aanmaning.genereertWanbetalingsvergoeding": "_:Wanbetalingsvergoeding001"
+        }
+      ],
+      "Schuldvordering.schuldvorderingssaldo": {
+        "@type": "Schuldvorderingssaldo",
+        "Saldo.saldobedrag": {
+          "@type": "GeldBedrag",
+          "Geldbedrag.waarde": 375,
+          "Geldbedrag.valuta": "EUR"
+        },
+        "Saldo.saldodatum":{
+          "@type": "xsd:date",
+          "@value": "2024-04-11"
+        }
+      },
+      "Schuldvordering.wanbetaling": {
+        "@type": "xsd:boolean",
+        "@value": "true"
+      }
+    },
+    {
+      "@id": "_:Schuldvorderingscategorie002",
+      "@type": "Schuldvorderingscategorie",
+      "Schuldvorderingscategorie.fiscaal": {
+        "@type": "xsd:boolean",
+        "@value": "true"
+      },
+      "Schuldvorderingscategorie.naam": "gemeentebelasting",
+      "Schuldvorderingscategorie.verjaringstermijn": {
+        "@type": "xsd:duration",
+        "@value": "P5Y"
+      }
+    },
+    {
+      "@id": "_:Wanbetalingsvergoeding001",
+      "@type": "Wanbetalingsvergoeding",
+      "Wanbetalingsvergoeding.kost": {
+        "@type": "GeldBedrag",
+        "Geldbedrag.waarde": 20,
+        "Geldbedrag.valuta": "EUR"},
+      "Wanbetalingsvergoeding.type": "_:concept/aanmaningskost"
+    }
+  ]
+}
