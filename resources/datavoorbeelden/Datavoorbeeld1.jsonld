@@ -166,7 +166,130 @@
         "@type": "GeldBedrag",
         "Geldbedrag.waarde": 20,
         "Geldbedrag.valuta": "EUR"},
-      "Wanbetalingsvergoeding.type": "_:concept/aanmaningskost"
+      "Wanbetalingsvergoeding.type": "_:codelijst.be/aanmaningskost"
+    },
+    {
+      "@id": "_:burger_Bob>",
+      "@type": "GeregistreerdPersoon",
+      "Persoon.volledigeNaam": "Bob Peeters",
+      "GeregistreerdPersoon.registratie": {
+        "@type": "Identificator",
+        "Identificator.identificator": {
+          "@value": "15.04.01-001.00",
+          "@type": "_:codelijsten.be/rijksregisternummer"
+        }
+      },
+      "GeregistreerdPersoon.inkomst": [
+        "_:burger_Bob/inkomst1",
+        "_:burger_Bob/inkomst2"
+      ],
+      "Persoon.isHoofdVan": {
+        "@type": "Gezin",
+        "Gezin.gezinshoofd": "_:burger_Bob",
+        "Gezin.gezinslid": [
+          "_:/burger_Bob",
+          "_:/burger_Lies"
+        ]
+      },
+      "GeregistreerdPersoon.financieelProfiel": {
+        "@type": "FinancieelProfiel",
+        "type": "_:codelijsten.be/vermogend",
+        "FinandiceelProfiel.afgeleidVan": [
+          "_:burger_Bob/inkomst1",
+          "_:burger_Bob/inkomst2"
+        ],
+        "FinancieelProfiel.bepaaldDoor": "_:Stad_Gent",
+        "FinancieelProfiel.startdatum": {
+          "@type": "xsd:date",
+          "@value": "2024-02-01"
+        }
+      }
+    },
+    {
+      "@id": "_:burger_Bob/inkomst1",
+      "@type": "Inkomst",
+      "Inkomst.inkomsttype": "_:codelijsten.be/beroepsinkomen",
+      "Inkomst.bedrag": {
+        "@type": "GeldBedrag",
+        "Geldbedrag.waarde": 4000,
+        "Geldbedrag.valuta": "EUR"
+      },
+      "Solvabiliteitsindicator.startdatum": "2015-01-011",
+      "Inkomst.periodiciteitInkomst": "_:codelijsten.be/maandelijks"
+    },
+    {
+      "@id": "_:burger_Bob/inkomst2",
+      "@type": "Inkomst",
+      "Inkomst.inkomsttype": "_:codelijsten.be/kadastraal inkomen",
+      "Inkomst.bedrag": {
+        "@type": "GeldBedrag",
+        "Geldbedrag.waarde": 1000,
+        "Geldbedrag.valuta": "EUR"
+      },
+      "Solvabiliteitsindicator.startdatum": "2007-01-01",
+      "Inkomst.periodiciteitInkomst": "_:codelijsten.be/jaarlijks"
     }
+    {
+      "@id": "_:burger_Alice",
+      "@type": "GeregistreerdPersoon",
+      "Persoon.volledigeNaam": "Alice Janssens",
+      "GeregistreerdPersoon.registratie": {
+        "@type": "Identificator",
+        "Identificator.identificator": {
+          "@value": "12.03.01-001.00",
+          "@type": "_:codelijsten.be/rijksregisternummer"
+        }
+      },
+      "Persoon.isHoofdVan": {
+        "@type": "Gezin",
+        "Gezin.gezinshoofd": "_:burger_Alice",
+        "Gezin.gezinslid": [
+          "_:burger_Alice>",
+          "_:burger_Anna",
+          "_:burger_Marie"
+        ]
+      },
+      "GeregistreerdPersoon.inkomst": ["_:burger_Alicce/inkomst1"],
+      "GeregistreerdPersoon.sociaalStatuut": ["_:burger_Alicce/sociaal_statuut1"],
+      "GeregistreerdPersoon.financieelProfiel": {
+        "@type": "FinancieelProfiel",
+        "FinancieelProfiel.type": "geringe afbetaalmogelijkheid",
+        "FinancieelProfiel.afgeleidVan": [
+          "_:burger_Alice/inkomst1",
+          "_:burger_Alise/sociaal_statuut1"
+        ],
+        "FinancieelProfiel.bepaaldDoor": "_:Stad_Gent",
+        "FinancieelProfiel.startdatum": {
+          "@type": "xsd:date",
+          "@value": "2024-01-01"
+        }
+      }
+    },
+    {
+      "@id": "_:burger_Alicce/inkomst1",
+      "@type": "Inkomst",
+      "Inkomst.inkomsttype": "_:codelijsten.be/leefloon",
+      "Inkomst.bedrag": {
+        "@type": "GeldBedrag",
+        "Geldbedrag.waarde": 1000,
+        "Geldbedrag.valuta": "EUR"
+      },
+      "Insolvabiliteitsindicator.startdatum": {
+        "@type": "xsd:date",
+        "@value": "2024-01-01"
+      },
+      "Inkomst.periodiciteitInkomst": "_:codelijsten.be/maandelijks"
+    },
+    {
+      "@id": "_:burger_Alicce/sociaal_statuut1",
+      "@type": "SociaalStatuut",
+      "SociaalStatuut.type": "leefloon",
+      "SociaalStatuut.toegekendDoor": "<OCMW>",
+      "Insolvabiliteitsindicator.startdatum":{
+        "@type": "xsd:date",
+        "@value": "2024-01-01"
+      }
+    }
+
   ]
 }

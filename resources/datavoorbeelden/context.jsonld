@@ -227,12 +227,7 @@
       "@type": "@id"
     },
     "Organisatie": "http://www.w3.org/ns/org#Organization",
-    "Organisatie.isSuborganisatieVan(source)": {
-      "@container": "@set",
-      "@id": "http://www.w3.org/ns/org#subOrganizationOf",
-      "@type": "@id"
-    },
-    "Organisatie.isSuborganisatieVan(target)": {
+    "Organisatie.isSuborganisatieVan": {
       "@container": "@set",
       "@id": "http://www.w3.org/ns/org#subOrganizationOf",
       "@type": "@id"
@@ -429,16 +424,16 @@
       "@type": "@id"
     },
     "ToerekeningVanBetaling": "https://data.vlaanderen.be/ns/schuldbeheer#ToerekeningVanBetaling",
-    "ToerekeningVanBetaling.betaling": {
-      "@id": "https://data.vlaanderen.be/ns/schuldbeheer#toegerekendeBetaling",
-      "@type": "@id"
-    },
     "ToerekeningVanBetaling.rekentToeAan": {
       "@id": "https://data.vlaanderen.be/ns/schuldbeheer#rekentToeAan",
       "@type": "@id"
     },
     "ToerekeningVanBetaling.toegerekendBedrag": {
       "@id": "https://data.vlaanderen.be/ns/schuldbeheer#toegerekendBedrag",
+      "@type": "@id"
+    },
+    "ToerekeningVanBetaling.toegerekendeBetaling": {
+      "@id": "https://data.vlaanderen.be/ns/schuldbeheer#toegerekendeBetaling",
       "@type": "@id"
     },
     "Vermindering": "https://data.vlaanderen.be/ns/schuldbeheer#Vermindering",
@@ -453,7 +448,8 @@
     },
     "Wanbetalingsvergoeding": "https://data.vlaanderen.be/ns/schuldbeheer#Wanbetalingsvergoeding",
     "Wanbetalingsvergoeding.interest": {
-      "@id": "https://data.vlaanderen.be/ns/schuldbeheer#interest"
+      "@id": "https://data.vlaanderen.be/ns/schuldbeheer#interest",
+      "@type": "http://www.w3.org/2001/XMLSchema#decimal"
     },
     "Wanbetalingsvergoeding.kost": {
       "@id": "https://data.vlaanderen.be/ns/schuldbeheer#kost",
