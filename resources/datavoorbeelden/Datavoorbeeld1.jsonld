@@ -289,7 +289,129 @@
         "@type": "xsd:date",
         "@value": "2024-01-01"
       }
+    },
+    {
+      "@id": "_:burger_Alice/afbetalingsplan1",
+      "@type": "Afbetalingsplan",
+      "Afbetalingsplan.startbedrag": {
+        "@type": "GeldBedrag",
+        "Geldbedrag.waarde": 483.50,
+        "Geldbedrag.valuta": "EUR"
+      },
+      "Afbetalingsplan.herschikteSchuldvordering": [
+        "_:schuldvordering002",
+        "_:schuldvordering003"
+      ],
+      "afbetalingsplanonderdeel": [
+        "_:burger_Alice/afbetalingsplan1_1",
+        "_:burger_Alice/afbetalingsplan1_2",
+        "_:burger_Alice/afbetalingsplan1_3"
+      ],
+      "Afbetalingsplan.voorstelAfbetalingsplan": {
+        "@type": "VoorstelAfbetalingsplan",
+        "Activiteit.werdGestartDoor": "_:/Stad_Gent>",
+        "Activiteit.startdatum": {
+          "@type": "xsd:date",
+          "@value": "2024-05-01"
+        }
+      },
+      "Afbetalingsplan.aanvaardingAfbetalingsplan": {
+        "@type": "AanvaardingAfbetalingsplan",
+        "Activiteit.werdGestartDoor": "<burger_Alice>",
+        "Activiteit.startdatum": {
+          "@type": "xsd:date",
+          "@value": "2024-05-05"
+        }
+      },
+      "Afbetalingsplan.afbetalingsplansaldo": {
+        "@type": "Afbetalingsplansaldo",
+        "saldobedrag": {
+          "@type": "GeldBedrag",
+          "waarde": 283.50,
+          "valuta": "EUR"
+        },
+        "saldodatum": {
+          "@type": "xsd:date",
+          "@value": "2024-06-01"
+        }
+      }
+    },
+    {
+      "@id": "_:burger_Alice/afbetalingsplan1_1",
+      "@type": "Afbetalingsplanonderdeel",
+      "Afgebetalingsplanonderdeel.teBetalenBedrag": {
+        "@type": "GeldBedrag",
+        "Geldbedrag.waarde": 200,
+        "Geldbedrag.valuta": "EUR"
+      },
+      "Afgebetalingsplanonderdeel.uitersteBetaaldatum": {
+        "@type": "xsd:date",
+        "@value": "2024-06-01"
+      }
+    },
+    {
+      "@id": "_:burger_Alice/afbetalingsplan1_2",
+      "@type": "Afbetalingsplanonderdeel",
+      "Afgebetalingsplanonderdeel.teBetalenBedrag": {
+        "@type": "GeldBedrag",
+        "Geldbedrag.waarde": 200,
+        "Geldbedrag.valuta": "EUR"
+      },
+      "Afgebetalingsplanonderdeel.uitersteBetaaldatum": {
+        "@type": "xsd:date",
+        "@value": "2024-07-01"
+      }
+    },
+    {
+      "@id": "_:burger_Alice/afbetalingsplan1_3",
+      "@type": "Afbetalingsplanonderdeel",
+      "Afgebetalingsplanonderdeel.teBetalenBedrag": {
+        "@type": "GeldBedrag",
+        "Geldbedrag.waarde": 83.50,
+        "Geldbedrag.valuta": "EUR"
+      },
+      "Afgebetalingsplanonderdeel.uitersteBetaaldatum": {
+        "@type": "xsd:date",
+        "@value": "2024-08-01"
+      }
+    },
+    {
+      "id": "_/afbetaling001",
+      "@type": "Afbetaling",
+      "Betaling.betaaldBedrag": {
+        "@type": "GeldBedrag",
+        "Geldbedrag.waarde": 100,
+        "Geldbedrag.valuta": "EUR"
+      },
+      "Betaling.betalingsdatum": {
+        "@type": "xsd:date",
+        "@value": "2024-05-30"
+      },
+      "Afbetaling.gevolgdAfbetalingsplanonderdeel": "_:burger_Alice/afbetalingsplan1_1>",
+      "Betaling.wordtToegerekendDoor": [
+        "_:toerekening002",
+        "_:toerekening003"
+      ]
+    },
+    {
+      "@id": "_:toerekening002",
+      "@type": "ToerekeningVanBetaling",
+      "ToerekeningVanBetaling.toegerekendbedrag": {
+        "@type": "GeldBedrag",
+        "Geldbedrag.waarde": 175,
+        "Geldbedrag.valuta": "EUR"
+      },
+      "ToerekeningVanBetaling.rekentToeAan": "_:schuldvordering002"
+    },
+    {
+      "@id": "_:toerekening003",
+      "@type": "ToerekeningVanBetaling",
+      "ToerekeningVanBetaling.toegerekendbedrag": {
+        "@type": "GeldBedrag",
+        "Geldbedrag.waarde": 25,
+        "Geldbedrag.valuta": "EUR"
+      },
+      "ToerekeningVanBetaling.rekentToeAan": "_:schuldvordering003"
     }
-
   ]
 }
