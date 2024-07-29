@@ -1,18 +1,12 @@
 {
   "@context": [
-    "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-schuldbeheer/main/resources/Datavoorbeelden/context.jsonld",
-    {
-      "xsd": "http://www.w3.org/2001/XMLSchema#"
-    }
+    "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-schuldbeheer/main/resources/datavoorbeelden/context.jsonld"
   ],
   "@graph": [
     {
       "@id": "_:Schuldvordering001",
       "@type": "Schuldvordering",
-      "Activiteit.startdatum": {
-          "@type": "xsd:date",
-          "@value": "2024-04-01"
-        },
+      "Activiteit.startdatum": "2024-04-01",
       "Activiteit.werdGestartDoor": "_:opvang_Sloeberke",
       "Schuldvordering.schuldenaar": "_:burger_Alice",
       "Schuldvordering.schuldeiser": "_:Stad_Gent",
@@ -22,10 +16,7 @@
           "Geldbedrag.waarde": 120,
           "Geldbedrag.valuta": "EUR"
         },
-      "Schuldvordering.uitersteBetaaldatum": {
-        "@type": "xsd:date",
-        "@value": "2024-04-15"
-        },
+      "Schuldvordering.uitersteBetaaldatum": "2024-04-15",
       "Schuldvordering.aanleiding": {
         "@type": "Resource",
         "http://purl.org/dc/terms/description": "naschoolse opvang maart 2024"
@@ -41,28 +32,16 @@
           "Geldbedrag.waarde": 0,
           "Geldbedrag.valuta": "EUR"
         },
-        "Saldo.saldodatum":{
-          "@type": "xsd:date",
-          "@value": "2024-04-11"
-        }
+        "Saldo.saldodatum":"2024-04-11"
       },
-      "Activiteit.einddatum": {
-        "@type": "xsd:date",
-        "@value": "2024-04-10"
-      }
+      "Activiteit.einddatum": "2024-04-10"
     },
     {
       "@id": "_:Schuldvorderingscategorie001",
       "@type": "Schuldvorderingscategorie",
-      "Schuldvorderingscategorie.fiscaal": {
-        "@type": "xsd:boolean",
-        "@value": "false"
-      },
+      "Schuldvorderingscategorie.fiscaal": "false",
       "Schuldvorderingscategorie.naam": "factuur kinderopvang",
-      "Schuldvorderingscategorie.verjaringstermijn": {
-        "@type": "xsd:duration",
-        "@value": "P2Y"
-      }
+      "Schuldvorderingscategorie.verjaringstermijn": "P2Y"
     },
     {
       "@id": "_:Betaling001",
@@ -87,10 +66,7 @@
     {
       "@id": "_:Schuldvordering002",
       "@type": "Schuldvordering",
-      "Activiteit.startdatum": {
-        "@type": "xsd:date",
-        "@value": "2023-12-20"
-      },
+      "Activiteit.startdatum": "2023-12-20",
       "Activiteit.werdGestartDoor": "_:Stad_Gent/Dienst_Belastingen",
       "Schuldvordering.schuldenaar": "_:burger_Alice",
       "Schuldvordering.schuldeiser": "_:Stad_Gent",
@@ -100,10 +76,7 @@
         "Geldbedrag.waarde": 325,
         "Geldbedrag.valuta": "EUR"
       },
-      "Schuldvordering.uitersteBetaaldatum": {
-        "@type": "xsd:date",
-        "@value": "2024-01-02"
-      },
+      "Schuldvordering.uitersteBetaaldatum": "2024-01-02",
       "Schuldvordering.aanleiding": {
         "@type": "Resource",
         "http://purl.org/dc/terms/description": "Belasting op takelen, kenteken 1ABC123, 2023-12-15"
@@ -115,17 +88,11 @@
       "Schuldvordering.aanmaning": [
         {
           "@type": "Aanmaning",
-          "Aanmaning.aanmaningsdatum": {
-            "@type": "xsd:date",
-            "@value": "2024-01-16"
-          }
+          "Aanmaning.aanmaningsdatum": "2024-01-16"
         },
         {
           "@type": "Aanmaning",
-          "Aanmaning.aanmaningsdatum": {
-            "@type": "xsd:date",
-            "@value": "2024-01-30"
-          },
+          "Aanmaning.aanmaningsdatum": "2024-01-30",
           "Aanmaning.genereertWanbetalingsvergoeding": "_:Wanbetalingsvergoeding001"
         }
       ],
@@ -136,28 +103,16 @@
           "Geldbedrag.waarde": 375,
           "Geldbedrag.valuta": "EUR"
         },
-        "Saldo.saldodatum":{
-          "@type": "xsd:date",
-          "@value": "2024-04-11"
-        }
+        "Saldo.saldodatum": "2024-04-11"
       },
-      "Schuldvordering.wanbetaling": {
-        "@type": "xsd:boolean",
-        "@value": "true"
-      }
+      "Schuldvordering.wanbetaling": "true"
     },
     {
       "@id": "_:Schuldvorderingscategorie002",
       "@type": "Schuldvorderingscategorie",
-      "Schuldvorderingscategorie.fiscaal": {
-        "@type": "xsd:boolean",
-        "@value": "true"
-      },
+      "Schuldvorderingscategorie.fiscaal": "true",
       "Schuldvorderingscategorie.naam": "gemeentebelasting",
-      "Schuldvorderingscategorie.verjaringstermijn": {
-        "@type": "xsd:duration",
-        "@value": "P5Y"
-      }
+      "Schuldvorderingscategorie.verjaringstermijn": "P5Y"
     },
     {
       "@id": "_:Wanbetalingsvergoeding001",
@@ -166,17 +121,17 @@
         "@type": "GeldBedrag",
         "Geldbedrag.waarde": 20,
         "Geldbedrag.valuta": "EUR"},
-      "Wanbetalingsvergoeding.type": "_:codelijst.be/aanmaningskost"
+      "Wanbetalingsvergoeding.type": "http://example.org/code/aanmaningskost"
     },
     {
-      "@id": "_:burger_Bob>",
+      "@id": "_:burger_Bob",
       "@type": "GeregistreerdPersoon",
       "Persoon.volledigeNaam": "Bob Peeters",
       "GeregistreerdPersoon.registratie": {
         "@type": "Identificator",
         "Identificator.identificator": {
           "@value": "15.04.01-001.00",
-          "@type": "_:codelijsten.be/rijksregisternummer"
+          "@type": "http://example.org/rijksregisternummer"
         }
       },
       "GeregistreerdPersoon.inkomst": [
@@ -193,42 +148,39 @@
       },
       "GeregistreerdPersoon.financieelProfiel": {
         "@type": "FinancieelProfiel",
-        "type": "_:codelijsten.be/vermogend",
+        "type": "http://example.org/code/vermogend",
         "FinandiceelProfiel.afgeleidVan": [
           "_:burger_Bob/inkomst1",
           "_:burger_Bob/inkomst2"
         ],
         "FinancieelProfiel.bepaaldDoor": "_:Stad_Gent",
-        "FinancieelProfiel.startdatum": {
-          "@type": "xsd:date",
-          "@value": "2024-02-01"
-        }
+        "FinancieelProfiel.startdatum": "2024-02-01"
       }
     },
     {
       "@id": "_:burger_Bob/inkomst1",
       "@type": "Inkomst",
-      "Inkomst.inkomsttype": "_:codelijsten.be/beroepsinkomen",
+      "Inkomst.inkomsttype": "http://example.org/code/beroepsinkomen",
       "Inkomst.bedrag": {
         "@type": "GeldBedrag",
         "Geldbedrag.waarde": 4000,
         "Geldbedrag.valuta": "EUR"
       },
       "Solvabiliteitsindicator.startdatum": "2015-01-011",
-      "Inkomst.periodiciteitInkomst": "_:codelijsten.be/maandelijks"
+      "Inkomst.periodiciteitInkomst": "http://example.org/code/maandelijks"
     },
     {
       "@id": "_:burger_Bob/inkomst2",
       "@type": "Inkomst",
-      "Inkomst.inkomsttype": "_:codelijsten.be/kadastraal inkomen",
+      "Inkomst.inkomsttype": "http://example.org/code/kadastraal inkomen",
       "Inkomst.bedrag": {
         "@type": "GeldBedrag",
         "Geldbedrag.waarde": 1000,
         "Geldbedrag.valuta": "EUR"
       },
       "Solvabiliteitsindicator.startdatum": "2007-01-01",
-      "Inkomst.periodiciteitInkomst": "_:codelijsten.be/jaarlijks"
-    }
+      "Inkomst.periodiciteitInkomst": "http://example.org/code/jaarlijks"
+    },
     {
       "@id": "_:burger_Alice",
       "@type": "GeregistreerdPersoon",
@@ -237,14 +189,14 @@
         "@type": "Identificator",
         "Identificator.identificator": {
           "@value": "12.03.01-001.00",
-          "@type": "_:codelijsten.be/rijksregisternummer"
+          "@type": "http://example.org/code/rijksregisternummer"
         }
       },
       "Persoon.isHoofdVan": {
         "@type": "Gezin",
         "Gezin.gezinshoofd": "_:burger_Alice",
         "Gezin.gezinslid": [
-          "_:burger_Alice>",
+          "_:burger_Alice",
           "_:burger_Anna",
           "_:burger_Marie"
         ]
@@ -253,42 +205,33 @@
       "GeregistreerdPersoon.sociaalStatuut": ["_:burger_Alicce/sociaal_statuut1"],
       "GeregistreerdPersoon.financieelProfiel": {
         "@type": "FinancieelProfiel",
-        "FinancieelProfiel.type": "geringe afbetaalmogelijkheid",
+        "FinancieelProfiel.type": "http://example.org/code/geringe afbetaalmogelijkheid",
         "FinancieelProfiel.afgeleidVan": [
           "_:burger_Alice/inkomst1",
           "_:burger_Alise/sociaal_statuut1"
         ],
         "FinancieelProfiel.bepaaldDoor": "_:Stad_Gent",
-        "FinancieelProfiel.startdatum": {
-          "@type": "xsd:date",
-          "@value": "2024-01-01"
-        }
+        "FinancieelProfiel.startdatum": "2024-01-01"
       }
     },
     {
       "@id": "_:burger_Alicce/inkomst1",
       "@type": "Inkomst",
-      "Inkomst.inkomsttype": "_:codelijsten.be/leefloon",
+      "Inkomst.inkomsttype": "http://example.org/code/leefloon",
       "Inkomst.bedrag": {
         "@type": "GeldBedrag",
         "Geldbedrag.waarde": 1000,
         "Geldbedrag.valuta": "EUR"
       },
-      "Insolvabiliteitsindicator.startdatum": {
-        "@type": "xsd:date",
-        "@value": "2024-01-01"
-      },
-      "Inkomst.periodiciteitInkomst": "_:codelijsten.be/maandelijks"
+      "Insolvabiliteitsindicator.startdatum": "2024-01-01",
+      "Inkomst.periodiciteitInkomst": "http://example.org/code/maandelijks"
     },
     {
       "@id": "_:burger_Alicce/sociaal_statuut1",
       "@type": "SociaalStatuut",
-      "SociaalStatuut.type": "leefloon",
-      "SociaalStatuut.toegekendDoor": "<OCMW>",
-      "Insolvabiliteitsindicator.startdatum":{
-        "@type": "xsd:date",
-        "@value": "2024-01-01"
-      }
+      "SociaalStatuut.type": "http://example.org/code/leefloon",
+      "SociaalStatuut.toegekendDoor": "_:Stad-Gent/OCMW",
+      "Insolvabiliteitsindicator.startdatum":"2024-01-01"
     },
     {
       "@id": "_:burger_Alice/afbetalingsplan1",
@@ -299,8 +242,8 @@
         "Geldbedrag.valuta": "EUR"
       },
       "Afbetalingsplan.herschikteSchuldvordering": [
-        "_:schuldvordering002",
-        "_:schuldvordering003"
+        "_:Schuldvordering002",
+        "_:Schuldvordering003"
       ],
       "afbetalingsplanonderdeel": [
         "_:burger_Alice/afbetalingsplan1_1",
@@ -309,31 +252,22 @@
       ],
       "Afbetalingsplan.voorstelAfbetalingsplan": {
         "@type": "VoorstelAfbetalingsplan",
-        "Activiteit.werdGestartDoor": "_:/Stad_Gent>",
-        "Activiteit.startdatum": {
-          "@type": "xsd:date",
-          "@value": "2024-05-01"
-        }
+        "Activiteit.werdGestartDoor": "_:/Stad_Gent",
+        "Activiteit.startdatum":"2024-05-01"
       },
       "Afbetalingsplan.aanvaardingAfbetalingsplan": {
         "@type": "AanvaardingAfbetalingsplan",
-        "Activiteit.werdGestartDoor": "<burger_Alice>",
-        "Activiteit.startdatum": {
-          "@type": "xsd:date",
-          "@value": "2024-05-05"
-        }
+        "Activiteit.werdGestartDoor": "_:/burger_Alice",
+        "Activiteit.startdatum": "2024-05-05"
       },
       "Afbetalingsplan.afbetalingsplansaldo": {
         "@type": "Afbetalingsplansaldo",
-        "saldobedrag": {
+        "Afbetalingsplansaldo.saldobedrag": {
           "@type": "GeldBedrag",
           "waarde": 283.50,
           "valuta": "EUR"
         },
-        "saldodatum": {
-          "@type": "xsd:date",
-          "@value": "2024-06-01"
-        }
+        "Afbetalingsplansaldo.saldodatum": "2024-06-01"
       }
     },
     {
@@ -344,10 +278,7 @@
         "Geldbedrag.waarde": 200,
         "Geldbedrag.valuta": "EUR"
       },
-      "Afgebetalingsplanonderdeel.uitersteBetaaldatum": {
-        "@type": "xsd:date",
-        "@value": "2024-06-01"
-      }
+      "Afgebetalingsplanonderdeel.uitersteBetaaldatum": "2024-06-01"
     },
     {
       "@id": "_:burger_Alice/afbetalingsplan1_2",
@@ -357,10 +288,7 @@
         "Geldbedrag.waarde": 200,
         "Geldbedrag.valuta": "EUR"
       },
-      "Afgebetalingsplanonderdeel.uitersteBetaaldatum": {
-        "@type": "xsd:date",
-        "@value": "2024-07-01"
-      }
+      "Afgebetalingsplanonderdeel.uitersteBetaaldatum": "2024-07-01"
     },
     {
       "@id": "_:burger_Alice/afbetalingsplan1_3",
@@ -370,10 +298,7 @@
         "Geldbedrag.waarde": 83.50,
         "Geldbedrag.valuta": "EUR"
       },
-      "Afgebetalingsplanonderdeel.uitersteBetaaldatum": {
-        "@type": "xsd:date",
-        "@value": "2024-08-01"
-      }
+      "Afgebetalingsplanonderdeel.uitersteBetaaldatum": "2024-08-01"
     },
     {
       "id": "_/afbetaling001",
@@ -383,11 +308,8 @@
         "Geldbedrag.waarde": 100,
         "Geldbedrag.valuta": "EUR"
       },
-      "Betaling.betalingsdatum": {
-        "@type": "xsd:date",
-        "@value": "2024-05-30"
-      },
-      "Afbetaling.gevolgdAfbetalingsplanonderdeel": "_:burger_Alice/afbetalingsplan1_1>",
+      "Betaling.betalingsdatum": "2024-05-30",
+      "Afbetaling.gevolgdAfbetalingsplanonderdeel": "_:burger_Alice/afbetalingsplan1_1",
       "Betaling.wordtToegerekendDoor": [
         "_:toerekening002",
         "_:toerekening003"
@@ -401,7 +323,7 @@
         "Geldbedrag.waarde": 175,
         "Geldbedrag.valuta": "EUR"
       },
-      "ToerekeningVanBetaling.rekentToeAan": "_:schuldvordering002"
+      "ToerekeningVanBetaling.rekentToeAan": "_:Schuldvordering002"
     },
     {
       "@id": "_:toerekening003",
@@ -411,7 +333,7 @@
         "Geldbedrag.waarde": 25,
         "Geldbedrag.valuta": "EUR"
       },
-      "ToerekeningVanBetaling.rekentToeAan": "_:schuldvordering003"
+      "ToerekeningVanBetaling.rekentToeAan": "_:Schuldvordering003"
     }
   ]
 }
