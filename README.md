@@ -1,5 +1,8 @@
 # OSLOthema-mijnThema
 
+These are the source files for the OSLO track 'Schuldbeheer'.  
+Examples are found at [./resources/Datavoorbeelden](./resources/Datavoorbeelden)  
+
 **_Editors:_**
 - first read [deze richtlijnen](https://github.com/Informatievlaanderen/OSLO-toolchain/blob/master/doc-user/README.md) .
 - Use [TagsAndNotes.xlsm](https://github.com/Informatievlaanderen/OSLO-allerleiTooltjes/tree/master/EA-Excel/TagsAndNotes) 
