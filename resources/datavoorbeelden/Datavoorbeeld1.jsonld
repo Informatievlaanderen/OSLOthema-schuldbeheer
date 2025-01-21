@@ -1,19 +1,26 @@
 {
   "@context": [
-    "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-schuldbeheer/main/resources/datavoorbeelden/context.jsonld"
+    "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/kandidaatstandaard/2024-09-05/context/schuldbeheer-ap.jsonld"
   ],
   "@graph": [
     {
       "@id": "_:Schuldvordering001",
       "@type": "Schuldvordering",
+      "Schuldvordering.identificator": {
+        "@type": "Identificator",
+        "Identificator.identificator": {
+          "@value": "1234",
+          "@type": "http://example.org/stadgent/schuldvorderingsid"
+        }
+      },
       "Activiteit.startdatum": "2024-04-01",
-      "Activiteit.werdGestartDoor": "_:opvang_Sloeberke",
-      "Schuldvordering.schuldenaar": "_:burger_Alice",
+      "Activiteit.werdGestartDoor": "_:Opvang_Sloeberke",
+      "Schuldvordering.schuldenaar": "_:Burger_Bob",
       "Schuldvordering.schuldeiser": "_:Stad_Gent",
       "Activiteit.genereert": "_:Factuur123",
-      "Schuldvordering.hoofdSom": {
+      "Schuldvordering.hoofdsom": {
           "@type": "Geldbedrag",
-          "Geldbedrag.waarde": 120,
+          "Geldbedrag.waarde": "120.00",
           "Geldbedrag.valuta": "EUR"
         },
       "Schuldvordering.uitersteBetaaldatum": "2024-04-15",
@@ -22,73 +29,58 @@
         "http://purl.org/dc/terms/description": "naschoolse opvang maart 2024"
         },
       "Schuldvordering.schuldvorderingscategorie" : "_:Schuldvorderingscategorie001",
-      "SchuldvorderingtoerekeningVanBetaling": [
-        "_:ToerekeningVanBetaling001"
+      "Schuldvordering.verjaringsdatum": "2026-04-01",
+      "Schuldvordering.toerekeningVanBetaling": [
+        "_:Toerekening001"
       ],
       "schuldvorderingssaldo": {
         "@type": "Schuldvorderingssaldo",
         "Saldo.saldobedrag": {
-          "@type": "GeldBedrag",
-          "Geldbedrag.waarde": 0,
+          "@type": "Geldbedrag",
+          "Geldbedrag.waarde": "0.00",
           "Geldbedrag.valuta": "EUR"
         },
         "Saldo.saldodatum":"2024-04-11"
       },
-      "Activiteit.einddatum": "2024-04-10"
-    },
-    {
-      "@id": "_:Schuldvorderingscategorie001",
-      "@type": "Schuldvorderingscategorie",
-      "Schuldvorderingscategorie.fiscaal": "false",
-      "Schuldvorderingscategorie.naam": "factuur kinderopvang",
-      "Schuldvorderingscategorie.verjaringstermijn": "P2Y"
-    },
-    {
-      "@id": "_:Betaling001",
-      "@type": "Betaling",
-      "Betaling.betaaldBedrag": {
-        "@type": "GeldBedrag",
-        "waarde": 120,
-        "valuta": "EUR"
-      },
-      "Betaling.betalingsdatum": "2024-04-10"
-    },
-    {
-      "@id": "_:ToerekeningVanBetaling001",
-      "@type": "ToerekeningVanBetaling",
-      "ToerekeningVanBetaling.toegerekendBedrag": {
-        "@type": "GeldBedrag",
-        "Geldbedrag.waarde": 120,
-        "Geldbedrag.valuta": "EUR"
-      },
-      "ToerekeningVanBetaling.toegerekendeBetaling": "_:Betaling001"
+      "Activiteit.einddatum": "2024-04-10",
+      "Schuldvordering.wanbetaling": "false"
     },
     {
       "@id": "_:Schuldvordering002",
       "@type": "Schuldvordering",
-      "Activiteit.startdatum": "2023-12-20",
+      "Schuldvordering.identificator": {
+        "@type": "Identificator",
+        "Identificator.identificator": {
+          "@value": "5678",
+          "@type": "http://example.org/stadgent/schuldvorderingsid"
+        }
+      },
+      "Activiteit.startdatum": "2023-12-01",
       "Activiteit.werdGestartDoor": "_:Stad_Gent/Dienst_Belastingen",
-      "Schuldvordering.schuldenaar": "_:burger_Alice",
+      "Schuldvordering.schuldenaar": "_:Burger_Alice",
       "Schuldvordering.schuldeiser": "_:Stad_Gent",
       "Activiteit.genereert": "_:Belasting123",
-      "Schuldvordering.hoofdSom": {
+      "Schuldvordering.hoofdsom": {
         "@type": "Geldbedrag",
-        "Geldbedrag.waarde": 325,
+        "Geldbedrag.waarde": "325.00",
         "Geldbedrag.valuta": "EUR"
       },
-      "Schuldvordering.uitersteBetaaldatum": "2024-01-02",
+      "Schuldvordering.uitersteBetaaldatum": "2023-12-15",
       "Schuldvordering.aanleiding": {
         "@type": "Resource",
-        "http://purl.org/dc/terms/description": "Belasting op takelen, kenteken 1ABC123, 2023-12-15"
+        "http://purl.org/dc/terms/description": "Belasting op takelen, kenteken 1ABC123, 2023-11-15"
       },
-      "Schuldvordering.grondslag": "_:Stad_Gent/Gemeentereglement_over_takelen",
+      "Schuldvordering.grondslag": {
+        "@type": "Rechtsgrond" ,
+        "@id": "_:Stad_Gent/Gemeentereglement_over_takelen"
+      },
       "Schuldvordering.schuldvorderingscategorie" : "_:Schuldvorderingscategorie002",
-      "Schuldvordering.toerekeningVanBetaling": ["_:ToerekeningVanBetaling001"],
-      "Schuldvordering.wanbetalingsvergoeding": ["_Wanebtalingsvergoeding001"],
+      "Schuldvordering.verjaringsdatum": "2029-05-01",
+      "Schuldvordering.toerekeningVanBetaling": ["_:Toerekening001"],
       "Schuldvordering.aanmaning": [
         {
           "@type": "Aanmaning",
-          "Aanmaning.aanmaningsdatum": "2024-01-16"
+          "Aanmaning.aanmaningsdatum": "2023-12-16"
         },
         {
           "@type": "Aanmaning",
@@ -96,16 +88,97 @@
           "Aanmaning.genereertWanbetalingsvergoeding": "_:Wanbetalingsvergoeding001"
         }
       ],
-      "Schuldvordering.schuldvorderingssaldo": {
+      "Schuldvordering.schuldvorderingssaldo": [
+        {
         "@type": "Schuldvorderingssaldo",
         "Saldo.saldobedrag": {
-          "@type": "GeldBedrag",
-          "Geldbedrag.waarde": 375,
+          "@type": "Geldbedrag",
+          "Geldbedrag.waarde": "345.00",
           "Geldbedrag.valuta": "EUR"
         },
-        "Saldo.saldodatum": "2024-04-11"
-      },
+        "Saldo.saldodatum": "2024-01-30"
+        },
+        {
+          "@type": "Schuldvorderingssaldo",
+          "Saldo.saldobedrag": {
+            "@type": "Geldbedrag",
+            "Geldbedrag.waarde": "265.00",
+            "Geldbedrag.valuta": "EUR"
+          },
+          "Saldo.saldodatum": "2024-05-30"
+        }
+      ],
+      "Schuldvordering.afbetalingsplan": "_:Burger_Alice/afbetalingsplan1",
       "Schuldvordering.wanbetaling": "true"
+    },
+    {
+      "@id": "_:Schuldvordering003",
+      "@type": "Schuldvordering",
+      "Schuldvordering.identificator": {
+        "@type": "Identificator",
+        "Identificator.identificator": {
+          "@value": "91011",
+          "@type": "http://example.org/stadgent/schuldvorderingsid"
+        }
+      },
+      "Activiteit.startdatum": "2023-12-01",
+      "Activiteit.werdGestartDoor": "_:Opvang_Sloeberke",
+      "Schuldvordering.schuldenaar": "_:Burger_Alice",
+      "Schuldvordering.schuldeiser": "_:Stad_Gent",
+      "Activiteit.genereert": "_:Factuur456",
+      "Schuldvordering.hoofdsom": {
+        "@type": "Geldbedrag",
+        "Geldbedrag.waarde": "120.00",
+        "Geldbedrag.valuta": "EUR"
+      },
+      "Schuldvordering.uitersteBetaaldatum": "2024-01-01",
+      "Schuldvordering.aanleiding": {
+        "@type": "Resource",
+        "http://purl.org/dc/terms/description": "naschoolse opvang november 2023"
+      },
+      "Schuldvordering.schuldvorderingscategorie" : "_:Schuldvorderingscategorie001",
+      "Schuldvordering.verjaringsdatum": "2026-05-01",
+      "Schuldvordering.toerekeningVanBetaling": ["_:Toerekening001"],
+      "Schuldvordering.aanmaning": [
+        {
+          "@type": "Aanmaning",
+          "Aanmaning.aanmaningsdatum": "2024-01-16"
+        },
+        {
+          "@type": "Aanmaning",
+          "Aanmaning.aanmaningsdatum": "2024-01-30"
+        }
+      ],
+      "Schuldvordering.schuldvorderingssaldo": [
+        {
+          "@type": "Schuldvorderingssaldo",
+          "Saldo.saldobedrag": {
+            "@type": "Geldbedrag",
+            "Geldbedrag.waarde": "120.00",
+            "Geldbedrag.valuta": "EUR"
+          },
+          "Saldo.saldodatum": "2024-01-30"
+        },
+        {
+        "@type": "Schuldvorderingssaldo",
+        "Saldo.saldobedrag": {
+          "@type": "Geldbedrag",
+          "Geldbedrag.waarde": "0.00",
+          "Geldbedrag.valuta": "EUR"
+        },
+        "Saldo.saldodatum": "2024-05-30"
+        }
+      ],
+      "Schuldvordering.afbetalingsplan": "_:Burger_Alice/afbetalingsplan1",
+      "Activiteit.einddatum": "2024-05-30",
+      "Schuldvordering.wanbetaling": "true"
+    },
+    {
+      "@id": "_:Schuldvorderingscategorie001",
+      "@type": "Schuldvorderingscategorie",
+      "Schuldvorderingscategorie.fiscaal": "false",
+      "Schuldvorderingscategorie.naam": "factuur kinderopvang",
+      "Schuldvorderingscategorie.verjaringstermijn": "P2Y"
     },
     {
       "@id": "_:Schuldvorderingscategorie002",
@@ -118,14 +191,14 @@
       "@id": "_:Wanbetalingsvergoeding001",
       "@type": "Wanbetalingsvergoeding",
       "Wanbetalingsvergoeding.kost": {
-        "@type": "GeldBedrag",
-        "Geldbedrag.waarde": 20,
+        "@type": "Geldbedrag",
+        "Geldbedrag.waarde": "20.00",
         "Geldbedrag.valuta": "EUR"},
       "Wanbetalingsvergoeding.type": "http://example.org/code/aanmaningskost"
     },
     {
-      "@id": "_:burger_Bob",
-      "@type": "GeregistreerdPersoon",
+      "@id": "_:Burger_Bob",
+      "@type": ["GeregistreerdPersoon","Persoon","Agent"],
       "Persoon.volledigeNaam": "Bob Peeters",
       "GeregistreerdPersoon.registratie": {
         "@type": "Identificator",
@@ -135,55 +208,49 @@
         }
       },
       "GeregistreerdPersoon.inkomst": [
-        "_:burger_Bob/inkomst1",
-        "_:burger_Bob/inkomst2"
+        "_:Burger_Bob/inkomst1",
+        "_:Burger_Bob/inkomst2"
       ],
-      "Persoon.isHoofdVan": {
-        "@type": "Gezin",
-        "Gezin.gezinshoofd": "_:burger_Bob",
-        "Gezin.gezinslid": [
-          "_:/burger_Bob",
-          "_:/burger_Lies"
-        ]
-      },
+      "Persoon.isHoofdVan": "_:Gezin001",
+      "Persoon.isLidVan": "_:Gezin001",
       "GeregistreerdPersoon.financieelProfiel": {
-        "@type": "FinancieelProfiel",
+        "@type": "Solvabiliteitsprofiel",
         "type": "http://example.org/code/vermogend",
         "FinandiceelProfiel.afgeleidVan": [
-          "_:burger_Bob/inkomst1",
-          "_:burger_Bob/inkomst2"
+          "_:Burger_Bob/inkomst1",
+          "_:Burger_Bob/inkomst2"
         ],
-        "FinancieelProfiel.bepaaldDoor": "_:Stad_Gent",
-        "FinancieelProfiel.startdatum": "2024-02-01"
+        "Solvabiliteitsprofiel.bepaaldDoor": "_:Stad_Gent",
+        "Solvabiliteitsprofiel.startdatum": "2024-02-01"
       }
     },
     {
-      "@id": "_:burger_Bob/inkomst1",
+      "@id": "_:Burger_Bob/inkomst1",
       "@type": "Inkomst",
-      "Inkomst.inkomsttype": "http://example.org/code/beroepsinkomen",
+      "Inkomst.type": "http://example.org/code/beroepsinkomen",
       "Inkomst.bedrag": {
-        "@type": "GeldBedrag",
-        "Geldbedrag.waarde": 4000,
+        "@type": "Geldbedrag",
+        "Geldbedrag.waarde": "4000.00",
         "Geldbedrag.valuta": "EUR"
       },
       "Solvabiliteitsindicator.startdatum": "2015-01-011",
       "Inkomst.periodiciteitInkomst": "http://example.org/code/maandelijks"
     },
     {
-      "@id": "_:burger_Bob/inkomst2",
+      "@id": "_:Burger_Bob/inkomst2",
       "@type": "Inkomst",
-      "Inkomst.inkomsttype": "http://example.org/code/kadastraal inkomen",
+      "Inkomst.type": "http://example.org/code/kadastraal_inkomen",
       "Inkomst.bedrag": {
-        "@type": "GeldBedrag",
-        "Geldbedrag.waarde": 1000,
+        "@type": "Geldbedrag",
+        "Geldbedrag.waarde": "1000.00",
         "Geldbedrag.valuta": "EUR"
       },
       "Solvabiliteitsindicator.startdatum": "2007-01-01",
       "Inkomst.periodiciteitInkomst": "http://example.org/code/jaarlijks"
     },
     {
-      "@id": "_:burger_Alice",
-      "@type": "GeregistreerdPersoon",
+      "@id": "_:Burger_Alice",
+      "@type": ["GeregistreerdPersoon", "Persoon", "Agent"],
       "Persoon.volledigeNaam": "Alice Janssens",
       "GeregistreerdPersoon.registratie": {
         "@type": "Identificator",
@@ -192,148 +259,285 @@
           "@type": "http://example.org/code/rijksregisternummer"
         }
       },
-      "Persoon.isHoofdVan": {
-        "@type": "Gezin",
-        "Gezin.gezinshoofd": "_:burger_Alice",
-        "Gezin.gezinslid": [
-          "_:burger_Alice",
-          "_:burger_Anna",
-          "_:burger_Marie"
-        ]
-      },
-      "GeregistreerdPersoon.inkomst": ["_:burger_Alicce/inkomst1"],
-      "GeregistreerdPersoon.sociaalStatuut": ["_:burger_Alicce/sociaal_statuut1"],
+      "Persoon.isHoofdVan": "_:Gezin002",
+      "Persoon.isLidVan": "_:Gezin002",
+      "GeregistreerdPersoon.inkomst": ["_:Burger_Alice/inkomst1"],
+      "GeregistreerdPersoon.sociaalStatuut": ["_:Burger_Alice/sociaal_statuut1"],
       "GeregistreerdPersoon.financieelProfiel": {
-        "@type": "FinancieelProfiel",
-        "FinancieelProfiel.type": "http://example.org/code/geringe afbetaalmogelijkheid",
-        "FinancieelProfiel.afgeleidVan": [
-          "_:burger_Alice/inkomst1",
-          "_:burger_Alise/sociaal_statuut1"
+        "@type": "Solvabiliteitsprofiel",
+        "Solvabiliteitsprofiel.type": "http://example.org/code/geringe_afbetaalmogelijkheid",
+        "Solvabiliteitsprofiel.afgeleidVan": [
+          "_:Burger_Alice/inkomst1",
+          "_:Burger_Alice/sociaal_statuut1"
         ],
-        "FinancieelProfiel.bepaaldDoor": "_:Stad_Gent",
-        "FinancieelProfiel.startdatum": "2024-01-01"
+        "Solvabiliteitsprofiel.bepaaldDoor": "_:Stad_Gent",
+        "Solvabiliteitsprofiel.startdatum": "2024-01-01"
       }
     },
     {
-      "@id": "_:burger_Alicce/inkomst1",
+      "@id": "_:Burger_Alice/inkomst1",
       "@type": "Inkomst",
-      "Inkomst.inkomsttype": "http://example.org/code/leefloon",
+      "Inkomst.type": "http://example.org/code/leefloon",
       "Inkomst.bedrag": {
-        "@type": "GeldBedrag",
-        "Geldbedrag.waarde": 1000,
+        "@type": "Geldbedrag",
+        "Geldbedrag.waarde": "1000.00",
         "Geldbedrag.valuta": "EUR"
       },
       "Insolvabiliteitsindicator.startdatum": "2024-01-01",
       "Inkomst.periodiciteitInkomst": "http://example.org/code/maandelijks"
     },
     {
-      "@id": "_:burger_Alicce/sociaal_statuut1",
+      "@id": "_:Burger_Alice/sociaal_statuut1",
       "@type": "SociaalStatuut",
       "SociaalStatuut.type": "http://example.org/code/leefloon",
-      "SociaalStatuut.toegekendDoor": "_:Stad-Gent/OCMW",
+      "SociaalStatuut.toegekendDoor": "_:Stad_Gent/OCMW",
       "Insolvabiliteitsindicator.startdatum":"2024-01-01"
     },
     {
-      "@id": "_:burger_Alice/afbetalingsplan1",
+      "@id": "_:Burger_Alice/aanvaarding1",
+      "@type": "Aanvaarding",
+      "Activiteit.werdGestartDoor": "_:/burger_Alice",
+      "Activiteit.startdatum": "2024-05-05",
+      "Aanvaarding.aanvaardAfbetalingsplan": "_:Burger_Alice/afbetalingsplan1"
+    },
+    {
+      "@id": "_:Burger_Alice/voorstel1" ,
+      "@type": "Voorstel" ,
+      "Activiteit.werdGestartDoor": "_:/Stad_Gent" ,
+      "Activiteit.startdatum": "2024-05-01" ,
+      "Voorstel.voorgesteldAfbetalingsplan": "_:Burger_Alice/afbetalingsplan1"
+    },
+    {
+      "@id": "_:Burger_Alice/afbetalingsplan1",
       "@type": "Afbetalingsplan",
       "Afbetalingsplan.startbedrag": {
-        "@type": "GeldBedrag",
-        "Geldbedrag.waarde": 483.50,
+        "@type": "Geldbedrag",
+        "Geldbedrag.waarde": "465.00",
         "Geldbedrag.valuta": "EUR"
       },
       "Afbetalingsplan.herschikteSchuldvordering": [
-        "_:Schuldvordering002",
+        "_:Schuldvordering001",
         "_:Schuldvordering003"
       ],
-      "afbetalingsplanonderdeel": [
-        "_:burger_Alice/afbetalingsplan1_1",
-        "_:burger_Alice/afbetalingsplan1_2",
-        "_:burger_Alice/afbetalingsplan1_3"
+      "Afbetalingsplan.afbetalingsplanonderdeel": [
+        "_:Burger_Alice/afbetalingsplan1_1",
+        "_:Burger_Alice/afbetalingsplan1_2",
+        "_:Burger_Alice/afbetalingsplan1_3"
       ],
-      "Afbetalingsplan.voorstelAfbetalingsplan": {
-        "@type": "VoorstelAfbetalingsplan",
-        "Activiteit.werdGestartDoor": "_:/Stad_Gent",
-        "Activiteit.startdatum":"2024-05-01"
-      },
-      "Afbetalingsplan.aanvaardingAfbetalingsplan": {
-        "@type": "AanvaardingAfbetalingsplan",
-        "Activiteit.werdGestartDoor": "_:/burger_Alice",
-        "Activiteit.startdatum": "2024-05-05"
-      },
+      "Afbetalingsplan.voorstel": "_:Burger_Alice/voorstel1",
+      "Afbetalingsplan.aanvaarding": "_:Burger_Alice/aanvaarding1",
       "Afbetalingsplan.afbetalingsplansaldo": {
         "@type": "Afbetalingsplansaldo",
         "Afbetalingsplansaldo.saldobedrag": {
-          "@type": "GeldBedrag",
-          "waarde": 283.50,
-          "valuta": "EUR"
+          "@type": "Geldbedrag",
+          "Geldbedrag.waarde": "265.00",
+          "Geldbedrag.valuta": "EUR"
         },
         "Afbetalingsplansaldo.saldodatum": "2024-06-01"
       }
     },
     {
-      "@id": "_:burger_Alice/afbetalingsplan1_1",
+      "@id": "_:Burger_Alice/afbetalingsplan1_1",
       "@type": "Afbetalingsplanonderdeel",
-      "Afgebetalingsplanonderdeel.teBetalenBedrag": {
-        "@type": "GeldBedrag",
-        "Geldbedrag.waarde": 200,
+      "Afbetalingsplanonderdeel.afTeBetalenBedrag": {
+        "@type": "Geldbedrag",
+        "Geldbedrag.waarde": "200.00",
         "Geldbedrag.valuta": "EUR"
       },
-      "Afgebetalingsplanonderdeel.uitersteBetaaldatum": "2024-06-01"
+      "Afbetalingsplanonderdeel.uitersteBetaaldatum": "2024-06-01",
+      "Afbetalingsplanonderdeel.isDeelVan": "_:Burger_Alice/afbetalingsplan1"
     },
     {
-      "@id": "_:burger_Alice/afbetalingsplan1_2",
+      "@id": "_:Burger_Alice/afbetalingsplan1_2",
       "@type": "Afbetalingsplanonderdeel",
-      "Afgebetalingsplanonderdeel.teBetalenBedrag": {
-        "@type": "GeldBedrag",
-        "Geldbedrag.waarde": 200,
+      "Afbetalingsplanonderdeel.afTeBetalenBedrag": {
+        "@type": "Geldbedrag",
+        "Geldbedrag.waarde": "200.00",
         "Geldbedrag.valuta": "EUR"
       },
-      "Afgebetalingsplanonderdeel.uitersteBetaaldatum": "2024-07-01"
+      "Afbetalingsplanonderdeel.uitersteBetaaldatum": "2024-07-01",
+      "Afbetalingsplanonderdeel.isDeelVan": "_:Burger_Alice/afbetalingsplan1"
     },
     {
-      "@id": "_:burger_Alice/afbetalingsplan1_3",
+      "@id": "_:Burger_Alice/afbetalingsplan1_3",
       "@type": "Afbetalingsplanonderdeel",
-      "Afgebetalingsplanonderdeel.teBetalenBedrag": {
-        "@type": "GeldBedrag",
-        "Geldbedrag.waarde": 83.50,
+      "Afbetalingsplanonderdeel.afTeBetalenBedrag": {
+        "@type": "Geldbedrag",
+        "Geldbedrag.waarde": "65.00",
         "Geldbedrag.valuta": "EUR"
       },
-      "Afgebetalingsplanonderdeel.uitersteBetaaldatum": "2024-08-01"
+      "Afbetalingsplanonderdeel.uitersteBetaaldatum": "2024-08-01",
+      "Afbetalingsplanonderdeel.isDeelVan": "_:Burger_Alice/afbetalingsplan1"
     },
     {
-      "id": "_/afbetaling001",
-      "@type": "Afbetaling",
+      "@id": "_:Betaling001",
+      "@type": "Betaling",
+      "Betaling.identificator": {
+        "@type": "Identificator",
+        "Identificator.identificator": {
+          "@value": "123456497835",
+          "@type": "http://example.org/betalingsid"
+        }
+      },
       "Betaling.betaaldBedrag": {
-        "@type": "GeldBedrag",
-        "Geldbedrag.waarde": 100,
+        "@type": "Geldbedrag",
+        "Geldbedrag.waarde": "120.00",
+        "Geldbedrag.valuta": "EUR"
+      },
+      "Betaling.betalingsdatum": "2024-04-10"
+    },
+    {
+      "@id": "_:Afbetaling001",
+      "@type": ["Afbetaling","Betaling"],
+      "Betaling.identificator": {
+        "@type": "Identificator",
+        "Identificator.identificator": {
+          "@value": "123456497836",
+          "@type": "http://example.org/betalingsid"
+        }
+      },
+      "Betaling.betaaldBedrag": {
+        "@type": "Geldbedrag",
+        "Geldbedrag.waarde": "200.00",
         "Geldbedrag.valuta": "EUR"
       },
       "Betaling.betalingsdatum": "2024-05-30",
-      "Afbetaling.gevolgdAfbetalingsplanonderdeel": "_:burger_Alice/afbetalingsplan1_1",
+      "Afbetaling.gevolgdAfbetalingsplanonderdeel": "_:Burger_Alice/afbetalingsplan1_1",
       "Betaling.wordtToegerekendDoor": [
-        "_:toerekening002",
-        "_:toerekening003"
+        "_:Toerekening002",
+        "_:Toerekening003"
       ]
     },
     {
-      "@id": "_:toerekening002",
+      "@id": "_:Toerekening001",
       "@type": "ToerekeningVanBetaling",
-      "ToerekeningVanBetaling.toegerekendbedrag": {
-        "@type": "GeldBedrag",
-        "Geldbedrag.waarde": 175,
+      "ToerekeningVanBetaling.toegerekendBedrag": {
+        "@type": "Geldbedrag",
+        "Geldbedrag.waarde": "120.00",
         "Geldbedrag.valuta": "EUR"
       },
+      "ToerekeningVanBetaling.toegerekendeBetaling": "_:Betaling001",
+      "ToerekeningVanBetaling.rekentToeAan": "_:Schuldvordering001"
+    },
+    {
+      "@id": "_:Toerekening002",
+      "@type": "ToerekeningVanBetaling",
+      "ToerekeningVanBetaling.toegerekendBedrag": {
+        "@type": "Geldbedrag",
+        "Geldbedrag.waarde": "120.00",
+        "Geldbedrag.valuta": "EUR"
+      },
+      "ToerekeningVanBetaling.toegerekendeBetaling": "_:Afbetaling001",
       "ToerekeningVanBetaling.rekentToeAan": "_:Schuldvordering002"
     },
     {
-      "@id": "_:toerekening003",
+      "@id": "_:Toerekening003",
       "@type": "ToerekeningVanBetaling",
-      "ToerekeningVanBetaling.toegerekendbedrag": {
-        "@type": "GeldBedrag",
-        "Geldbedrag.waarde": 25,
+      "ToerekeningVanBetaling.toegerekendBedrag": {
+        "@type": "Geldbedrag",
+        "Geldbedrag.waarde": "80.00",
         "Geldbedrag.valuta": "EUR"
       },
+      "ToerekeningVanBetaling.toegerekendeBetaling": "_:Afbetaling001",
       "ToerekeningVanBetaling.rekentToeAan": "_:Schuldvordering003"
+    },
+    {
+      "@id": "_:Burger_Lies",
+      "@type": ["GeregistreerdPersoon","Persoon"],
+      "Persoon.volledigeNaam": "Lies Janssens",
+      "GeregistreerdPersoon.registratie": {
+        "@type": "Identificator",
+        "Identificator.identificator": {
+          "@value": "15.04.01-002.00",
+          "@type": "http://example.org/rijksregisternummer"
+        }
+      },
+      "Persoon.isLidVan": "_:Gezin001"
+    },
+    {
+      "@id": "_:Burger_Anna",
+      "@type": ["GeregistreerdPersoon","Persoon"],
+      "Persoon.volledigeNaam": "Anna Janssens",
+      "GeregistreerdPersoon.registratie": {
+        "@type": "Identificator",
+        "Identificator.identificator": {
+          "@value": "12.03.01-002.00",
+          "@type": "http://example.org/code/rijksregisternummer"
+        }
+      },
+      "Persoon.isLidVan": "_:Gezin002"
+    },
+    {
+      "@id": "_:Burger_Marie",
+      "@type": ["GeregistreerdPersoon","Persoon"],
+      "Persoon.volledigeNaam": "Marie Janssens",
+      "GeregistreerdPersoon.registratie": {
+        "@type": "Identificator",
+        "Identificator.identificator": {
+          "@value": "12.03.01-003.00",
+          "@type": "http://example.org/code/rijksregisternummer"
+        }
+      },
+      "Persoon.isLidVan": "_:Gezin002"
+    },
+    { "@id": "_:Gezin001",
+      "@type": "Gezin",
+      "Gezin.gezinshoofd": "_:Burger_Bob",
+      "Gezin.gezinslid": [
+        "_:Burger_Bob",
+        "_:Burger_Lies"
+      ]
+    },
+    { "@id": "_:Gezin002",
+      "@type": "Gezin",
+      "Gezin.gezinshoofd": "_:Burger_Alice",
+      "Gezin.gezinslid": [
+        "_:Burger_Alice",
+        "_:Burger_Anna",
+        "_:Burger_Marie"
+      ]
+    },
+    {
+      "@id": "_:Stad_Gent",
+      "@type": ["Agent", "Organisatie"]
+    },
+    {
+      "@id": "_:Stad_Gent/OCMW",
+      "@type": ["Agent", "Organisatie", "http://purl.org/dc/terms/Agent"]
+    },
+    {
+      "@id": "_:Opvang_Sloeberke",
+      "@type": ["Agent", "Organisatie"]
+    },
+    {
+      "@id": "http://example.org/code/aanmaningskost",
+      "@type": "Wanbetalingsvergoedingstype"
+
+    },
+    {
+      "@id": "http://example.org/code/geringe_afbetaalmogelijkheid",
+      "@type": "Solvabiliteitsprofieltype"
+
+    },
+    {
+      "@id": "http://example.org/code/maandelijks",
+      "@type": "PeriodiciteitInkomst"
+    },
+    {
+      "@id": "http://example.org/code/jaarlijks",
+      "@type": "PeriodiciteitInkomst"
+    },
+    {
+      "@id": "http://example.org/code/beroepsinkomen",
+      "@type": "Inkomsttype"
+    },
+    {
+      "@id": "http://example.org/code/leefloon",
+      "@type": "Inkomsttype"
+    },
+    {
+      "@id": "http://example.org/code/kadastraal_inkomen",
+      "@type": "Inkomsttype"
     }
   ]
 }
