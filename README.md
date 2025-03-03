@@ -29,4 +29,6 @@ To publish in the test environment, update [https://github.com/Informatievlaande
 
 To publish in the production environment, update [https://github.com/Informatievlaanderen/data.vlaanderen.be2/blob/production/config/production/schuldbeheer.publication.json](https://github.com/Informatievlaanderen/data.vlaanderen.be2/blob/production/config/production/schuldbeheer.publication.json)
 
-To publication progress and potential reported errors can be followed [here](https://app.circleci.com/pipelines/github/Informatievlaanderen/Data.Vlaanderen.be) 
+To publication progress and potential reported errors can be followed [here](https://app.circleci.com/pipelines/github/Informatievlaanderen/data.vlaanderen.be2) 
+
+To view error related to toolchain4: [https://github.com/Informatievlaanderen/data.vlaanderen.be2-generated/tree/production/report4](https://github.com/Informatievlaanderen/data.vlaanderen.be2-generated/tree/production/report4)
