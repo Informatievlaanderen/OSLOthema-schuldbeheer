@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/kandidaatstandaard/2024-09-05/context/schuldbeheer-ap.jsonld"
+    "https://data.vlaanderen.be/doc/applicatieprofiel/schuldbeheer/kandidaatstandaard/2025-03-03/context/schuldbeheer-ap.jsonld"
   ],
   "@graph": [
     {
@@ -503,7 +503,7 @@
     },
     {
       "@id": "_:Stad_Gent/OCMW",
-      "@type": ["Agent", "Organisatie", "http://purl.org/dc/terms/Agent"]
+      "@type": ["Agent", "Organisatie"]
     },
     {
       "@id": "_:Opvang_Sloeberke",
