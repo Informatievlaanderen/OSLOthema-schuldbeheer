@@ -163,11 +163,11 @@ This **must** always be an array of objects containing the properties `name` and
 
 The date on which the data standard was announced on the working group 'Data Standards'.
 
-### `dateRecognitionWorkgroup`
+### `dateOfAcknowledgementByWorkingGroup`
 
 The date on which the data standard was accepted as an acknowledged standard by the working group 'Data standards'.
 
-### `dateRecognitionSteeringCommittee`
+### `dateOfAcknowledgementBySteeringCommittee`
 
 The date on which the data standard was accepted as an acknowledged standard by the steering committee 'Flemish Information and ICT policy'.
 
