@@ -80,9 +80,9 @@
     }
   ],
   "dateOfRegistration": "2024-03-21",
-  "dateOfAcknowledgementByWorkingGroup": "2025-03-27",
-  "dateOfAcknowledgementBySteeringCommittee": "2025-04-24",
+  "dateRecognitionWorkgroup": "2025-03-27",
+  "dateRecognitionSteeringCommittee": "2025-04-24",
   "repository": "OSLOthema-schuldbeheer",
   "datePublicReviewStart": "2024-09-05",
-  "endOfPublicationDate": ""
+  "datePublicReviewEnd":"2025-03-10"
 }
