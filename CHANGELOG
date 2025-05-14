@@ -1,5 +1,6 @@
-2025-05-08
-  - zichtbaar maken van persoonsrelatie omwille van probleem bij generatie shacl shapes
+2025-05-14
+  - Zichtbaar maken van persoonsrelatie omwille van probleem bij generatie shacl shapes
+  - Eliminatie van duplicate URIs
 
 2025-03-03
   - Verwerking issues van de publiek review (issues #1 tem #9)
