@@ -2,7 +2,7 @@
   "title": "Applicatieprofiel Schuldbeheer",
   "category": "Applicatieprofiel",
   "usage": "Aanbevolen (vrijwillig)",
-  "status": "erkende-standaard",
+  "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/ErkendeStandaard",
   "descriptionFileName": "ap-schuldbeheer-config.md",
   "responsibleOrganisation": [
     {
@@ -83,6 +83,6 @@
   "dateOfAcknowledgementByWorkingGroup": "2025-03-27",
   "dateOfAcknowledgementBySteeringCommittee": "2025-04-24",
   "datePublicReviewStart": "2024-09-05",
-  "datePublicReviewEnd":"2025-03-10",
+  "datePublicReviewEnd": "2025-03-10",
   "endOfPublicationDate": ""
 }
