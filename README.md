@@ -19,9 +19,10 @@ To refer to the available git tags to create a publication point from, see the "
 The organisation and meaning of the git branches are documented in this table.
 
 
-| Branch | Purpose | Active (y/n) |
-| ------ | --------- | ---------------- | 
-|  |  |  |
+| Branch | Purpose                | Active (y/n) |
+|--------|------------------------|--------------| 
+| main   | publication data model | y            |
+| standaardenregister | publication standaardenregister | y            |
 
 ## Publishing
 
