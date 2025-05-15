@@ -1,3 +1,6 @@
+2025-05-15
+ - Correctie van externe URIs voor Activiteit.werdGestartDoor en Activiteit.einddatum
+
 2025-05-14
   - Zichtbaar maken van persoonsrelatie omwille van probleem bij generatie shacl shapes
   - Eliminatie van duplicate URIs
