@@ -15,7 +15,7 @@
         "standaardregisterurl": "https://data.vlaanderen.be/standaarden/vocabularium-schuldbeheer/"
     },
     {
-        "name": "schuldbeheer",
+        "name": "schuldbeheer-ap",
         "type": "ap",
         "eap": "OSLO-Schuldbeheer.eap",
         "diagram": "OSLO-Schuldbeheer-master",
