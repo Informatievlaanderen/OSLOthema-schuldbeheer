@@ -9,3 +9,7 @@
 2025-03-03
   - Verwerking issues van de publiek review (issues #1 tem #9)
   - Aanpassing aan toolchain4
+
+2025-10-06
+- update config: rename `schuldbeheer-ap` to `schuldbeheer` for content negotiation
+
